@@ -25,19 +25,17 @@ def download_github_with_pd_csv(path, df_name):
     url = 'https://github.com/migai/{}/{}/{}'
     file_path = path.rsplit("/")[-1]
     download_file(url.format(repo, branch, path), file_path)
-	df_name = pd.read_csv(file_path)
+    df_name = pd.read_csv(file_path)
 
 
 def load_data():
     download_github_code("utils/kag_utils.py")
-	
-	transactions = pd.DataFrame() 
-	items = pd.DataFrame() 
-	item_categories = pd.DataFrame() 
-	shops = pd.DataFrame() 
-	download_github_with_pd_csv("readonly/final_project_data/sales_train.csv.gz", transactions)
-	download_github_with_pd_csv("readonly/final_project_data/items.csv", items)
-	download_github_with_pd_csv("readonly/final_project_data/item_categories.csv", item_categories)
-	download_github_with_pd_csv("readonly/final_project_data/shops.csv", shops)
-	
-	return
+
+    transactions = pd.DataFrame() 
+    items = pd.DataFrame() 
+    item_categories = pd.DataFrame() 
+    shops = pd.DataFrame() 
+    download_github_with_pd_csv("readonly/final_project_data/sales_train.csv.gz", transactions)
+    download_github_with_pd_csv("readonly/final_project_data/items.csv", items)
+    download_github_with_pd_csv("readonly/final_project_data/item_categories.csv", item_categories)
+    download_github_with_pd_csv("readonly/final_project_data/shops.csv", shops)
