@@ -68,7 +68,7 @@ def load_data():
   # then load data from the GitHub repo into Google Colab dataframe
   for path_name in data_files:
     data_frame_name = path_name.rsplit("/")[-1].split(".")[0]
-    exec(data_frame_name + ' = pd.DataFrame()")
+    exec(data_frame_name + " = pd.DataFrame()")
     github_into_colab_pandas_df(path_name,eval(data_frame_name))
 
 
