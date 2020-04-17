@@ -9,9 +9,11 @@ Data files for the final competition reside in the readonly/final_project_data d
 
 .
 
-template_Kaggle_Coursera_Final_Assignment.ipynb is a starter notebook that aids in using Google Colab, by loading all data and code helper files from this GitHub repository into the Colab environment
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/migai/Kag/blob/master/template_Kaggle_Coursera_Final_Assignment.ipynb)
-This should be "forked" or copied and used at your discretion, and then renamed with a version number and stored in the "ipynb_versions" directory.  Only modify the "template" ipynb in the top directory if you are including modifications that are key for every ipynb notebook we use in the competition.  Otherwise, copy from the "ipynb_versions" directory and modify (with new filename/version name) and save modifications back to the "ipynb_versions" directory.
+template_Kaggle_Coursera_Final_Assignment.ipynb [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/migai/Kag/blob/master/template_Kaggle_Coursera_Final_Assignment.ipynb)
+
+is a starter notebook that aids in using Google Colab, by loading all data and code helper files from this GitHub repository into the Colab environment
+
+This should be forked and used at your discretion, and then appropriately renamed with a version number and stored in the "ipynb_versions" directory or in a new branch you create.  Only modify the "template" ipynb in the top directory if you are including modifications that are key for every ipynb notebook we use in the competition.  Otherwise, clone or fork from the modified version you have been working on.
 
 ---
 
@@ -25,6 +27,7 @@ The "data_output" directory can be used to store modified data (e.g., with extra
 
 For some stimulating ideas on useful helper code files, and how to proceed with EDA, feature generation, and modeling in the competition, look in the "readonly/kaggletils" and "readonly/examples" directories, which hold files associated with our Coursera instructors and other pioneers in this (or other) Kaggle competition.
 EDA from DennisE:
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/migai/Kag/blob/master/readonly/examples/DennisE_coursera_competition_getting_started_eda.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/migai/Kag/blob/master/readonly/examples/DennisE_coursera_competition_getting_started_eda.ipynb)
+
 Modeling from DennisE:
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/migai/Kag/blob/master/readonly/examples/DennisE_coursera_competition_modeling.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/migai/Kag/blob/master/readonly/examples/DennisE_coursera_competition_modeling.ipynb)
