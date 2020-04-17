@@ -26,6 +26,7 @@ The "data_output" directory can be used to store modified data (e.g., with extra
 ---
 
 For some stimulating ideas on useful helper code files, and how to proceed with EDA, feature generation, and modeling in the competition, look in the "readonly/kaggletils" and "readonly/examples" directories, which hold files associated with our Coursera instructors and other pioneers in this (or other) Kaggle competition.
+
 EDA from DennisE:
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/migai/Kag/blob/master/readonly/examples/DennisE_coursera_competition_getting_started_eda.ipynb)
 
