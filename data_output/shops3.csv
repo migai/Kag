@@ -1,17 +1,17 @@
 ,shop_name,shop_id,En_Name,City,Type
 0,"!Якутск Орджоникидзе, 56 фран",0,"! Yakutsk Ordzhonikidze, 56 Franc",Yakutsk,Mall
 1,"!Якутск ТЦ ""Центральный"" фран",1,"! Yakutsk TC ""Central"" Franc",Yakutsk,Mall
-2,"Адыгея ТЦ ""Мега""",2,"Adygea TC ""Mega""",Krosnodar,Mega
+2,"Адыгея ТЦ ""Мега""",2,"Adygea TC ""Mega""",Adygea,Mega
 3,"Балашиха ТРК ""Октябрь-Киномир""",3,"Balashikha TRC ""October-Kinomir""",Balashikha,Mall
 4,"Волжский ТЦ ""Волга Молл""",4,"Volzhsky mall ""Volga Mall""",Volgograd,Mall
 5,"Вологда ТРЦ ""Мармелад""",5,"Vologda SEC ""Marmalade""",Vologda,SEC
 6,"Воронеж (Плехановская, 13)",6,"Voronezh (Plekhanovskaya, 13)",Voronezh,Shop
 7,"Воронеж ТРЦ ""Максимир""",7,"Voronezh SEC ""Maksimir""",Voronezh,SEC
 8,"Воронеж ТРЦ Сити-Парк ""Град""",8,"Voronezh shopping center City Park ""Castle""",Voronezh,Mall
-9,Выездная Торговля,9,Itinerant trade,N/A,Itinerant
+9,Выездная Торговля,9,Itinerant trade,None,Itinerant
 10,Жуковский ул. Чкалова 39м?,10,Zhukovsky Street. Chkalov 39m?,Zhukovsky,Shop
 11,Жуковский ул. Чкалова 39м²,11,Zhukovsky Street. Chkalov 39m²,Zhukovsky,Shop
-12,Интернет-магазин ЧС,12,Shop Online Emergencies,N/A,Online
+12,Интернет-магазин ЧС,12,Shop Online Emergencies,None,Online
 13,"Казань ТЦ ""Бехетле""",13,"Kazan shopping center ""Bahetle""",Kazan,Mall
 14,"Казань ТЦ ""ПаркХаус"" II",14,"Kazan shopping mall of ""Parkhouse"" II of",Kazan,Mall
 15,"Калуга ТРЦ ""XXI век""",15,"Kaluga SEC ""XXI Century""",Kaluga,SEC
@@ -19,7 +19,7 @@
 17,"Красноярск ТЦ ""Взлетка Плаза""",17,"Krasnoyarsk TC ""Vzletka Plaza""",Krasnoyarsk,Mall
 18,"Красноярск ТЦ ""Июнь""",18,"Krasnoyarsk SC ""June""",Krasnoyarsk,Mall
 19,"Курск ТЦ ""Пушкинский""",19,"Kursk TC ""Pushkin""",Kursk,Mall
-20,"Москва ""Распродажа""",20,"Moscow ""Sale""",N/A,Online
+20,"Москва ""Распродажа""",20,"Moscow ""Sale""",None,Online
 21,"Москва МТРЦ ""Афи Молл""",21,"Moscow MTRTS ""Afi Mall""",Moscow,Mall
 22,Москва Магазин С21,22,Moscow C21 Store,Moscow,Shop
 23,"Москва ТК ""Буденовский"" (пав.А2)",23,"Moscow TK ""Budenovsky"" (pav.A2)",Moscow,Mall
@@ -54,7 +54,7 @@
 52,"Уфа ТК ""Центральный""",52,"Ufa TC ""Central""",Ufa,Mall
 53,"Уфа ТЦ ""Семья"" 2",53,"Ufa TC ""Family"" 2",Ufa,Mall
 54,"Химки ТЦ ""Мега""",54,"Khimki shopping center ""Mega""",Khimki,Mega
-55,Цифровой склад 1С-Онлайн,55,Digital storage 1C-line,N/A,Online
+55,Цифровой склад 1С-Онлайн,55,Digital storage 1C-line,None,Online
 56,"Чехов ТРЦ ""Карнавал""",56,"Czechs SEC ""Carnival""",Chekhov,SEC
 57,"Якутск Орджоникидзе, 56",57,"Yakutsk Ordzhonikidze, 56",Yakutsk,Shop
 58,"Якутск ТЦ ""Центральный""",58,"Yakutsk TC ""Central""",Yakutsk,Mall
