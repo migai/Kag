@@ -8,10 +8,10 @@ shop_name,shop_id,En_Name,City,Type,district,population
 "Воронеж (Плехановская, 13)",6,"Voronezh (Plekhanovskaya, 13)",Voronezh,Shop,Central,848752
 "Воронеж ТРЦ ""Максимир""",7,"Voronezh SEC ""Maksimir""",Voronezh,SEC,Central,848752
 "Воронеж ТРЦ Сити-Парк ""Град""",8,"Voronezh shopping center City Park ""Castle""",Voronezh,Mall,Central,848752
-Выездная Торговля,9,Itinerant trade,None,Itinerant,None,None
+Выездная Торговля,9,Itinerant trade,None,Itinerant,None,100000
 Жуковский ул. Чкалова 39м?,10,Zhukovsky Street. Chkalov 39m?,Zhukovsky,Shop,Central,105000
 Жуковский ул. Чкалова 39м²,11,Zhukovsky Street. Chkalov 39m²,Zhukovsky,Shop,Central,105000
-Интернет-магазин ЧС,12,Shop Online Emergencies,None,Online,None,None
+Интернет-магазин ЧС,12,Shop Online Emergencies,None,Online,None,20000000
 "Казань ТЦ ""Бехетле""",13,"Kazan shopping center ""Bahetle""",Kazan,Mall,Volga,1104738
 "Казань ТЦ ""ПаркХаус"" II",14,"Kazan shopping mall of ""Parkhouse"" II of",Kazan,Mall,Volga,1104738
 "Калуга ТРЦ ""XXI век""",15,"Kaluga SEC ""XXI Century""",Kaluga,SEC,Central,338978
@@ -19,7 +19,7 @@ shop_name,shop_id,En_Name,City,Type,district,population
 "Красноярск ТЦ ""Взлетка Плаза""",17,"Krasnoyarsk TC ""Vzletka Plaza""",Krasnoyarsk,Mall,Siberian,927200
 "Красноярск ТЦ ""Июнь""",18,"Krasnoyarsk SC ""June""",Krasnoyarsk,Mall,Siberian,927200
 "Курск ТЦ ""Пушкинский""",19,"Kursk TC ""Pushkin""",Kursk,Mall,Central,409431
-"Москва ""Распродажа""",20,"Moscow ""Sale""",None,Online,None,None
+"Москва ""Распродажа""",20,"Moscow ""Sale""",None,Online,None,20000000
 "Москва МТРЦ ""Афи Молл""",21,"Moscow MTRTS ""Afi Mall""",Moscow,Mall,Central,10381222
 Москва Магазин С21,22,Moscow C21 Store,Moscow,Shop,Central,10381222
 "Москва ТК ""Буденовский"" (пав.А2)",23,"Moscow TK ""Budenovsky"" (pav.A2)",Moscow,Mall,Central,10381222
@@ -54,7 +54,7 @@ shop_name,shop_id,En_Name,City,Type,district,population
 "Уфа ТК ""Центральный""",52,"Ufa TC ""Central""",Ufa,Mall,Volga,1033338
 "Уфа ТЦ ""Семья"" 2",53,"Ufa TC ""Family"" 2",Ufa,Mall,Volga,1033338
 "Химки ТЦ ""Мега""",54,"Khimki shopping center ""Mega""",Khimki,Mega,Central,239967
-Цифровой склад 1С-Онлайн,55,Digital storage 1C-line,None,Online,None,None
+Цифровой склад 1С-Онлайн,55,Digital storage 1C-line,None,Online,None,20000000
 "Чехов ТРЦ ""Карнавал""",56,"Czechs SEC ""Carnival""",Chekhov,SEC,Central,61000
 "Якутск Орджоникидзе, 56",57,"Yakutsk Ordzhonikidze, 56",Yakutsk,Shop,Eastern,235600
 "Якутск ТЦ ""Центральный""",58,"Yakutsk TC ""Central""",Yakutsk,Mall,Eastern,235600
