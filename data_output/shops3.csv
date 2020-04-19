@@ -1,61 +1,61 @@
-,shop_name,shop_id,En_Name,City,Type,district,population
-0,"!Якутск Орджоникидзе, 56 фран",0,"! Yakutsk Ordzhonikidze, 56 Franc",Yakutsk,Mall,Eastern,235600
-1,"!Якутск ТЦ ""Центральный"" фран",1,"! Yakutsk TC ""Central"" Franc",Yakutsk,Mall,Eastern,235600
-2,"Адыгея ТЦ ""Мега""",2,"Adygea TC ""Mega""",Adygea,Mega,South,144055
-3,"Балашиха ТРК ""Октябрь-Киномир""",3,"Balashikha TRC ""October-Kinomir""",Balashikha,Mall,Central,150103
-4,"Волжский ТЦ ""Волга Молл""",4,"Volzhsky mall ""Volga Mall""",Volgograd,Mall,South,1011417
-5,"Вологда ТРЦ ""Мармелад""",5,"Vologda SEC ""Marmalade""",Vologda,SEC,Northwestern,314900
-6,"Воронеж (Плехановская, 13)",6,"Voronezh (Plekhanovskaya, 13)",Voronezh,Shop,Central,848752
-7,"Воронеж ТРЦ ""Максимир""",7,"Voronezh SEC ""Maksimir""",Voronezh,SEC,Central,848752
-8,"Воронеж ТРЦ Сити-Парк ""Град""",8,"Voronezh shopping center City Park ""Castle""",Voronezh,Mall,Central,848752
-9,Выездная Торговля,9,Itinerant trade,None,Itinerant,None,None
-10,Жуковский ул. Чкалова 39м?,10,Zhukovsky Street. Chkalov 39m?,Zhukovsky,Shop,Central,105000
-11,Жуковский ул. Чкалова 39м²,11,Zhukovsky Street. Chkalov 39m²,Zhukovsky,Shop,Central,105000
-12,Интернет-магазин ЧС,12,Shop Online Emergencies,None,Online,None,None
-13,"Казань ТЦ ""Бехетле""",13,"Kazan shopping center ""Bahetle""",Kazan,Mall,Volga,1104738
-14,"Казань ТЦ ""ПаркХаус"" II",14,"Kazan shopping mall of ""Parkhouse"" II of",Kazan,Mall,Volga,1104738
-15,"Калуга ТРЦ ""XXI век""",15,"Kaluga SEC ""XXI Century""",Kaluga,SEC,Central,338978
-16,"Коломна ТЦ ""Рио""",16,"Kolomna shopping center ""Rio""",Kolomna,Mall,Central,147690
-17,"Красноярск ТЦ ""Взлетка Плаза""",17,"Krasnoyarsk TC ""Vzletka Plaza""",Krasnoyarsk,Mall,Siberian,927200
-18,"Красноярск ТЦ ""Июнь""",18,"Krasnoyarsk SC ""June""",Krasnoyarsk,Mall,Siberian,927200
-19,"Курск ТЦ ""Пушкинский""",19,"Kursk TC ""Pushkin""",Kursk,Mall,Central,409431
-20,"Москва ""Распродажа""",20,"Moscow ""Sale""",None,Online,None,None
-21,"Москва МТРЦ ""Афи Молл""",21,"Moscow MTRTS ""Afi Mall""",Moscow,Mall,Central,10381222
-22,Москва Магазин С21,22,Moscow C21 Store,Moscow,Shop,Central,10381222
-23,"Москва ТК ""Буденовский"" (пав.А2)",23,"Moscow TK ""Budenovsky"" (pav.A2)",Moscow,Mall,Central,10381222
-24,"Москва ТК ""Буденовский"" (пав.К7)",24,"Moscow TK ""Budenovsky"" (pav.K7)",Moscow,Mall,Central,10381222
-25,"Москва ТРК ""Атриум""",25,"Moscow SEC ""Atrium""",Moscow,SEC,Central,10381222
-26,"Москва ТЦ ""Ареал"" (Беляево)",26,"Moscow shopping mall ""area"" (Belyaevo)",Moscow,Mall,Central,10381222
-27,"Москва ТЦ ""МЕГА Белая Дача II""",27,"Moscow shopping center ""MEGA Belaya Dacha II""",Moscow,Mega,Central,10381222
-28,"Москва ТЦ ""МЕГА Теплый Стан"" II",28,"Moscow shopping center ""MEGA Teply Stan"" II of",Moscow,Mega,Central,10381222
-29,"Москва ТЦ ""Новый век"" (Новокосино)",29,"Moscow shopping center ""New Age"" (Novokosino)",Moscow,Mall,Central,10381222
-30,"Москва ТЦ ""Перловский""",30,"Moscow shopping center ""Perlovskiy""",Mytishchi,SEC,Central,160542
-31,"Москва ТЦ ""Семеновский""",31,"Moscow shopping center ""Semyonov""",Moscow,SEC,Central,10381222
-32,"Москва ТЦ ""Серебряный Дом""",32,"Moscow shopping center ""Silver House""",Moscow,SEC,Central,10381222
-33,"Мытищи ТРК ""XL-3""",33,"Mytishchi TRK ""XL-3""",Mytishchi,SEC,Central,160542
-34,"Н.Новгород ТРЦ ""РИО""",34,"Nizhny Novgorod SEC ""RIO""",Nizhny Novgorod,SEC,Volga,1284164
-35,"Н.Новгород ТРЦ ""Фантастика""",35,"Nizhny Novgorod SEC ""Fantasy""",Nizhny Novgorod,SEC,Volga,1284164
-36,"Новосибирск ТРЦ ""Галерея Новосибирск""",36,"Novosibirsk SEC ""Gallery Novosibirsk""",Novosibirsk,SEC,Siberian,1419007
-37,"Новосибирск ТЦ ""Мега""",37,"Novosibirsk shopping center ""Mega""",Novosibirsk,Mega,Siberian,1419007
-38,"Омск ТЦ ""Мега""",38,"Omsk TC ""Mega""",Omsk,Mega,Siberian,1129281
-39,"РостовНаДону ТРК ""Мегацентр Горизонт""",39,"RostovNaDonu TRC ""Megacenter Horizon""",Rostov-on-Don,SEC,South,1074482
-40,"РостовНаДону ТРК ""Мегацентр Горизонт"" Островной",40,"RostovNaDonu TRC ""Megacenter Horizon"" Island",Rostov-on-Don,SEC,South,1074482
-41,"РостовНаДону ТЦ ""Мега""",41,"RostovNaDonu TC ""Mega""",Rostov-on-Don,Mega,South,1074482
-42,"СПб ТК ""Невский Центр""",42,"St. Petersburg TK ""Nevsky Center""",St. Petersburg,Mall,Northwestern,5028000
-43,"СПб ТК ""Сенная""",43,"St. Petersburg TK ""Sennaya""",St. Petersburg,SEC,Northwestern,5028000
-44,"Самара ТЦ ""Мелодия""",44,"Samara mall ""Melody""",Samara,Mall,Volga,1134730
-45,"Самара ТЦ ""ПаркХаус""",45,"Samara mall of ""Parkhouse""",Samara,Mall,Volga,1134730
-46,"Сергиев Посад ТЦ ""7Я""",46,"Sergiev Posad TC ""7Ya""",Sergiyev Posad,SEC,Central,109252
-47,"Сургут ТРЦ ""Сити Молл""",47,"Surgut SEC ""City Mall""",Surgut,SEC,Ural,300367
-48,"Томск ТРЦ ""Изумрудный Город""",48,"Tomsk SEC ""Emerald City""",Tomsk,SEC,Siberian,485519
-49,"Тюмень ТРЦ ""Кристалл""",49,"Tyumen SEC ""Crystal""",Tyumen,SEC,Ural,519119
-50,"Тюмень ТЦ ""Гудвин""",50,"Tyumen SC ""Goodwin""",Tyumen,Mall,Ural,519119
-51,"Тюмень ТЦ ""Зеленый Берег""",51,"Tyumen SC ""Green Coast""",Tyumen,Mall,Ural,519119
-52,"Уфа ТК ""Центральный""",52,"Ufa TC ""Central""",Ufa,Mall,Volga,1033338
-53,"Уфа ТЦ ""Семья"" 2",53,"Ufa TC ""Family"" 2",Ufa,Mall,Volga,1033338
-54,"Химки ТЦ ""Мега""",54,"Khimki shopping center ""Mega""",Khimki,Mega,Central,239967
-55,Цифровой склад 1С-Онлайн,55,Digital storage 1C-line,None,Online,None,None
-56,"Чехов ТРЦ ""Карнавал""",56,"Czechs SEC ""Carnival""",Chekhov,SEC,Central,61000
-57,"Якутск Орджоникидзе, 56",57,"Yakutsk Ordzhonikidze, 56",Yakutsk,Shop,Eastern,235600
-58,"Якутск ТЦ ""Центральный""",58,"Yakutsk TC ""Central""",Yakutsk,Mall,Eastern,235600
-59,"Ярославль ТЦ ""Альтаир""",59,"Yaroslavl shopping center ""Altair""",Yaroslavl,SEC,Central,606730
+shop_name,shop_id,En_Name,City,Type,district,population
+"!Якутск Орджоникидзе, 56 фран",0,"! Yakutsk Ordzhonikidze, 56 Franc",Yakutsk,Mall,Eastern,235600
+"!Якутск ТЦ ""Центральный"" фран",1,"! Yakutsk TC ""Central"" Franc",Yakutsk,Mall,Eastern,235600
+"Адыгея ТЦ ""Мега""",2,"Adygea TC ""Mega""",Adygea,Mega,South,144055
+"Балашиха ТРК ""Октябрь-Киномир""",3,"Balashikha TRC ""October-Kinomir""",Balashikha,Mall,Central,150103
+"Волжский ТЦ ""Волга Молл""",4,"Volzhsky mall ""Volga Mall""",Volgograd,Mall,South,1011417
+"Вологда ТРЦ ""Мармелад""",5,"Vologda SEC ""Marmalade""",Vologda,SEC,Northwestern,314900
+"Воронеж (Плехановская, 13)",6,"Voronezh (Plekhanovskaya, 13)",Voronezh,Shop,Central,848752
+"Воронеж ТРЦ ""Максимир""",7,"Voronezh SEC ""Maksimir""",Voronezh,SEC,Central,848752
+"Воронеж ТРЦ Сити-Парк ""Град""",8,"Voronezh shopping center City Park ""Castle""",Voronezh,Mall,Central,848752
+Выездная Торговля,9,Itinerant trade,None,Itinerant,None,None
+Жуковский ул. Чкалова 39м?,10,Zhukovsky Street. Chkalov 39m?,Zhukovsky,Shop,Central,105000
+Жуковский ул. Чкалова 39м²,11,Zhukovsky Street. Chkalov 39m²,Zhukovsky,Shop,Central,105000
+Интернет-магазин ЧС,12,Shop Online Emergencies,None,Online,None,None
+"Казань ТЦ ""Бехетле""",13,"Kazan shopping center ""Bahetle""",Kazan,Mall,Volga,1104738
+"Казань ТЦ ""ПаркХаус"" II",14,"Kazan shopping mall of ""Parkhouse"" II of",Kazan,Mall,Volga,1104738
+"Калуга ТРЦ ""XXI век""",15,"Kaluga SEC ""XXI Century""",Kaluga,SEC,Central,338978
+"Коломна ТЦ ""Рио""",16,"Kolomna shopping center ""Rio""",Kolomna,Mall,Central,147690
+"Красноярск ТЦ ""Взлетка Плаза""",17,"Krasnoyarsk TC ""Vzletka Plaza""",Krasnoyarsk,Mall,Siberian,927200
+"Красноярск ТЦ ""Июнь""",18,"Krasnoyarsk SC ""June""",Krasnoyarsk,Mall,Siberian,927200
+"Курск ТЦ ""Пушкинский""",19,"Kursk TC ""Pushkin""",Kursk,Mall,Central,409431
+"Москва ""Распродажа""",20,"Moscow ""Sale""",None,Online,None,None
+"Москва МТРЦ ""Афи Молл""",21,"Moscow MTRTS ""Afi Mall""",Moscow,Mall,Central,10381222
+Москва Магазин С21,22,Moscow C21 Store,Moscow,Shop,Central,10381222
+"Москва ТК ""Буденовский"" (пав.А2)",23,"Moscow TK ""Budenovsky"" (pav.A2)",Moscow,Mall,Central,10381222
+"Москва ТК ""Буденовский"" (пав.К7)",24,"Moscow TK ""Budenovsky"" (pav.K7)",Moscow,Mall,Central,10381222
+"Москва ТРК ""Атриум""",25,"Moscow SEC ""Atrium""",Moscow,SEC,Central,10381222
+"Москва ТЦ ""Ареал"" (Беляево)",26,"Moscow shopping mall ""area"" (Belyaevo)",Moscow,Mall,Central,10381222
+"Москва ТЦ ""МЕГА Белая Дача II""",27,"Moscow shopping center ""MEGA Belaya Dacha II""",Moscow,Mega,Central,10381222
+"Москва ТЦ ""МЕГА Теплый Стан"" II",28,"Moscow shopping center ""MEGA Teply Stan"" II of",Moscow,Mega,Central,10381222
+"Москва ТЦ ""Новый век"" (Новокосино)",29,"Moscow shopping center ""New Age"" (Novokosino)",Moscow,Mall,Central,10381222
+"Москва ТЦ ""Перловский""",30,"Moscow shopping center ""Perlovskiy""",Mytishchi,SEC,Central,160542
+"Москва ТЦ ""Семеновский""",31,"Moscow shopping center ""Semyonov""",Moscow,SEC,Central,10381222
+"Москва ТЦ ""Серебряный Дом""",32,"Moscow shopping center ""Silver House""",Moscow,SEC,Central,10381222
+"Мытищи ТРК ""XL-3""",33,"Mytishchi TRK ""XL-3""",Mytishchi,SEC,Central,160542
+"Н.Новгород ТРЦ ""РИО""",34,"Nizhny Novgorod SEC ""RIO""",Nizhny Novgorod,SEC,Volga,1284164
+"Н.Новгород ТРЦ ""Фантастика""",35,"Nizhny Novgorod SEC ""Fantasy""",Nizhny Novgorod,SEC,Volga,1284164
+"Новосибирск ТРЦ ""Галерея Новосибирск""",36,"Novosibirsk SEC ""Gallery Novosibirsk""",Novosibirsk,SEC,Siberian,1419007
+"Новосибирск ТЦ ""Мега""",37,"Novosibirsk shopping center ""Mega""",Novosibirsk,Mega,Siberian,1419007
+"Омск ТЦ ""Мега""",38,"Omsk TC ""Mega""",Omsk,Mega,Siberian,1129281
+"РостовНаДону ТРК ""Мегацентр Горизонт""",39,"RostovNaDonu TRC ""Megacenter Horizon""",Rostov-on-Don,SEC,South,1074482
+"РостовНаДону ТРК ""Мегацентр Горизонт"" Островной",40,"RostovNaDonu TRC ""Megacenter Horizon"" Island",Rostov-on-Don,SEC,South,1074482
+"РостовНаДону ТЦ ""Мега""",41,"RostovNaDonu TC ""Mega""",Rostov-on-Don,Mega,South,1074482
+"СПб ТК ""Невский Центр""",42,"St. Petersburg TK ""Nevsky Center""",St. Petersburg,Mall,Northwestern,5028000
+"СПб ТК ""Сенная""",43,"St. Petersburg TK ""Sennaya""",St. Petersburg,SEC,Northwestern,5028000
+"Самара ТЦ ""Мелодия""",44,"Samara mall ""Melody""",Samara,Mall,Volga,1134730
+"Самара ТЦ ""ПаркХаус""",45,"Samara mall of ""Parkhouse""",Samara,Mall,Volga,1134730
+"Сергиев Посад ТЦ ""7Я""",46,"Sergiev Posad TC ""7Ya""",Sergiyev Posad,SEC,Central,109252
+"Сургут ТРЦ ""Сити Молл""",47,"Surgut SEC ""City Mall""",Surgut,SEC,Ural,300367
+"Томск ТРЦ ""Изумрудный Город""",48,"Tomsk SEC ""Emerald City""",Tomsk,SEC,Siberian,485519
+"Тюмень ТРЦ ""Кристалл""",49,"Tyumen SEC ""Crystal""",Tyumen,SEC,Ural,519119
+"Тюмень ТЦ ""Гудвин""",50,"Tyumen SC ""Goodwin""",Tyumen,Mall,Ural,519119
+"Тюмень ТЦ ""Зеленый Берег""",51,"Tyumen SC ""Green Coast""",Tyumen,Mall,Ural,519119
+"Уфа ТК ""Центральный""",52,"Ufa TC ""Central""",Ufa,Mall,Volga,1033338
+"Уфа ТЦ ""Семья"" 2",53,"Ufa TC ""Family"" 2",Ufa,Mall,Volga,1033338
+"Химки ТЦ ""Мега""",54,"Khimki shopping center ""Mega""",Khimki,Mega,Central,239967
+Цифровой склад 1С-Онлайн,55,Digital storage 1C-line,None,Online,None,None
+"Чехов ТРЦ ""Карнавал""",56,"Czechs SEC ""Carnival""",Chekhov,SEC,Central,61000
+"Якутск Орджоникидзе, 56",57,"Yakutsk Ordzhonikidze, 56",Yakutsk,Shop,Eastern,235600
+"Якутск ТЦ ""Центральный""",58,"Yakutsk TC ""Central""",Yakutsk,Mall,Eastern,235600
+"Ярославль ТЦ ""Альтаир""",59,"Yaroslavl shopping center ""Altair""",Yaroslavl,SEC,Central,606730
