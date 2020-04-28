@@ -1,5 +1,5 @@
 shop_name,shop_id,En_Name,City,Type,district,population,tested
-"!Якутск Орджоникидзе, 56 фран",0,"! Yakutsk Ordzhonikidze, 56 Franc",Yakutsk,Mall,Eastern,235600,False
+"!Якутск Орджоникидзе, 56 фран",0,"! Yakutsk Ordzhonikidze, 56 Franc",Yakutsk,Shop,Eastern,235600,False
 "!Якутск ТЦ ""Центральный"" фран",1,"! Yakutsk TC ""Central"" Franc",Yakutsk,Mall,Eastern,235600,False
 "Адыгея ТЦ ""Мега""",2,"Adygea TC ""Mega""",Adygea,Mega,South,144055,True
 "Балашиха ТРК ""Октябрь-Киномир""",3,"Balashikha TRC ""October-Kinomir""",Balashikha,Mall,Central,150103,True
