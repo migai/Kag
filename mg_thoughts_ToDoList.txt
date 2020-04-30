@@ -1,0 +1,61 @@
+
+*********************************
+**** TO DO IF TIME PERMITS:  ****
+1) check item IDs in shop 9, make sure they are covered elsewhere by other shops, and that they don't forecast sales of other items or at other shops... if shop 9 is irrelevant (and, since it isn't in the test set), drop shop 9 from training dataset
+
+2) do the same for shop 13 (supermarket)
+
+3) complete the investigation of "nasty" shop-item pairs, and see if we can do something special about them
+
+4) look at variance in item_price vs. time (vs. shop, shop_category,item_category,...) and see if anything is going to blow up on us, or if anything is predictive
+
+*********************************
+*********************************
+
+5) Adjust data file column names for conformity and readability:
+En_Name in item_categories_augmented and item_categories_transl --> en_cat_name
+also, change other column names for readability and conformity to:
+item_category_name,item_category_id,en_cat_name,item_category1,item_category2,item_category3,item_category4,item_cat_tested
+
+En_Name in shops transl --> en_shop_name
+multiple changes in shops_augmented column titles:
+now use:  shop_name,shop_id,en_shop_name,shop_city,shop_category,shop_federal_district,shop_city_population,shop_tested
+
+En_name in items_transl --> en_item_name
+
+***********************************
+items dataset prprocessing:
+- add column for T/F if in test dataset
+- add colum for total rows in train dataset
+- add column for total units sold in train dataset
+- sort or group by category and plot histograms of each(?)
+
+6) NLP for items dataset
+6.1) remove nasty characters from translation column
+6.2a) do a TF-IDF kind of thing --> less weight for ngrams that appear most often
+6.2b) create 1, 2, and 3 ngram 1-hot vectors
+6.3) encode each item into 1-hot vectors
+6.4) determine cosine distance (or other) similarity and group accordingly(?)
+
+6.5) establish a minimum similarity cutoff for grouping items, and create new feature groups
+6.6) explore the unused items (not in test dataset) and see what feature groups they fall into, and if they are relevant for training
+
+************************************
+
+7) revisit shops, item_categories, correlations:
+
+7.1) what is the story with shop 36 having so few training rows?
+
+7.2) sort columns of correlation heatmap so similar shops are adjacent in the plot
+-  try sorting by shop category, shop district, sum() of correlation column for a shop
+-  make heatmap based on item category correlations rather than item correlations
+
+7.3) shops dataset -- add columns with 
+- top 3 item sales
+- unit quantities for those 3 sales
+- total number of units sold as per the train dataset
+- total rows in the train dataset
+
+7.4) same for item_categories
+
+
