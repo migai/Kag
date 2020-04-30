@@ -1,4 +1,4 @@
-shop_name,shop_id,en_shop_name,city,shop_type,federal_district,city_population,tested
+shop_name,shop_id,en_shop_name,shop_city,shop_category,shop_federal_district,shop_city_population,shop_tested
 "!Якутск Орджоникидзе, 56 фран",0,"! Yakutsk Ordzhonikidze, 56 Franc",Yakutsk,Shop,Eastern,235600,False
 "!Якутск ТЦ ""Центральный"" фран",1,"! Yakutsk TC ""Central"" Franc",Yakutsk,Mall,Eastern,235600,False
 "Адыгея ТЦ ""Мега""",2,"Adygea TC ""Mega""",Adygea,Mega,South,144055,True
