@@ -31,7 +31,9 @@ items dataset prprocessing:
 - sort or group by category and plot histograms of each(?)
 
 6) NLP for items dataset
+6.0) first try to find some n-grams by looking between nasty characters
 6.1) remove nasty characters from translation column
+6.1b) look at short words (2-3-4 letters), and see if they are acronyms or abbreviations that can be made uniform
 6.2a) do a TF-IDF kind of thing --> less weight for ngrams that appear most often
 6.2b) create 1, 2, and 3 ngram 1-hot vectors
 6.3) encode each item into 1-hot vectors
