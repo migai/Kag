@@ -1,4 +1,18 @@
 
+Ok in week 2 of the course it was said that score should be 1,16777
+
+"A good exercise is to reproduce previous_value_benchmark. As the name suggest - in this benchmark for the each shop/item pair our predictions are just monthly sales from the previous month, i.e. October 2015.
+
+The most important step at reproducing this score is correctly aggregating daily data and constructing monthly sales data frame. You need to get lagged values, fill NaNs with zeros and clip the values into [0,20] range. If you do it correctly, you'll get precisely 1.16777 on the public leaderboard.
+
+Generating features like this is a necessary basis for more complex models. Also, if you decide to fit some model, don't forget to clip the target into [0,20] range, it makes a big difference."
+
+*********************************
+*********************************
+change type of correlation method in shops and shops-categories...
+pearson (default) looks for linear correlation, and I need something more like cosine similarity
+(also, pearson and other methods give values from -1 to +1, so I shouldn't filter out negative values perhaps)
+
 *********************************
 **** TO DO IF TIME PERMITS:  ****
 1) check item IDs in shop 9, make sure they are covered elsewhere by other shops, and that they don't forecast sales of other items or at other shops... if shop 9 is irrelevant (and, since it isn't in the test set), drop shop 9 from training dataset
