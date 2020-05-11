@@ -1,0 +1,61 @@
+shop_id,shop_tested,shop_type,shop_type_enc,shop_city,shop_city_enc,shop_federal_district,shop_federal_district_enc,s_type_broad,s_type_broad_enc,fd_popdens,fd_popdens_enc,fd_gdp,fd_gdp_enc
+0,False,Shop,20,Yakutsk,54,Eastern,16,Shop,10,Remote,5,Intermediate,43
+1,False,Mall,50,Yakutsk,54,Eastern,16,Mall,60,Remote,5,Intermediate,43
+2,True,Mega,30,Adygea,10,South,32,Mall,60,Intermediate,31,Low,25
+3,True,Mall,50,Balashikha,8,Central,56,Mall,60,Populous,57,Intermediate,43
+4,True,Mall,50,Volgograd,14,South,32,Mall,60,Intermediate,31,Low,25
+5,True,SEC,40,Vologda,12,Northwestern,8,Mall,60,Remote,5,Intermediate,43
+6,True,Shop,20,Voronezh,52,Central,56,Shop,10,Populous,57,Intermediate,43
+7,True,SEC,40,Voronezh,52,Central,56,Mall,60,Populous,57,Intermediate,43
+8,False,Mall,50,Voronezh,52,Central,56,Mall,60,Populous,57,Intermediate,43
+9,False,Itinerant,0,None,50,None,0,Online,35,Online,25,High,60
+10,True,Shop,20,Zhukovsky,6,Central,56,Shop,10,Populous,57,Intermediate,43
+11,False,Shop,20,Zhukovsky,6,Central,56,Shop,10,Populous,57,Intermediate,43
+12,True,Online,10,None,50,None,0,Online,35,Online,25,High,60
+13,False,Mall,50,Kazan,22,Volga,48,Mall,60,Intermediate,31,Low,25
+14,True,Mall,50,Kazan,22,Volga,48,Mall,60,Intermediate,31,Low,25
+15,True,SEC,40,Kaluga,26,Central,56,Mall,60,Populous,57,Intermediate,43
+16,True,Mall,50,Kolomna,20,Central,56,Mall,60,Populous,57,Intermediate,43
+17,False,Mall,50,Krasnoyarsk,34,Siberian,40,Mall,60,Remote,5,Low,25
+18,True,Mall,50,Krasnoyarsk,34,Siberian,40,Mall,60,Remote,5,Low,25
+19,True,Mall,50,Kursk,28,Central,56,Mall,60,Populous,57,Intermediate,43
+20,False,Online,10,None,50,None,0,Online,35,Online,25,High,60
+21,True,Mall,50,Moscow,56,Central,56,Mall,60,Populous,57,Intermediate,43
+22,True,Shop,20,Moscow,56,Central,56,Shop,10,Populous,57,Intermediate,43
+23,False,Mall,50,Moscow,56,Central,56,Mall,60,Populous,57,Intermediate,43
+24,True,Mall,50,Moscow,56,Central,56,Mall,60,Populous,57,Intermediate,43
+25,True,SEC,40,Moscow,56,Central,56,Mall,60,Populous,57,Intermediate,43
+26,True,Mall,50,Moscow,56,Central,56,Mall,60,Populous,57,Intermediate,43
+27,False,Mega,30,Moscow,56,Central,56,Mall,60,Populous,57,Intermediate,43
+28,True,Mega,30,Moscow,56,Central,56,Mall,60,Populous,57,Intermediate,43
+29,False,Mall,50,Moscow,56,Central,56,Mall,60,Populous,57,Intermediate,43
+30,False,SEC,40,Mytishchi,0,Central,56,Mall,60,Populous,57,Intermediate,43
+31,True,SEC,40,Moscow,56,Central,56,Mall,60,Populous,57,Intermediate,43
+32,False,SEC,40,Moscow,56,Central,56,Mall,60,Populous,57,Intermediate,43
+33,False,SEC,40,Mytishchi,0,Central,56,Mall,60,Populous,57,Intermediate,43
+34,True,SEC,40,Nizhny Novgorod,42,Volga,48,Mall,60,Intermediate,31,Low,25
+35,True,SEC,40,Nizhny Novgorod,42,Volga,48,Mall,60,Intermediate,31,Low,25
+36,True,SEC,40,Novosibirsk,38,Siberian,40,Mall,60,Remote,5,Low,25
+37,True,Mega,30,Novosibirsk,38,Siberian,40,Mall,60,Remote,5,Low,25
+38,True,Mega,30,Omsk,18,Siberian,40,Mall,60,Remote,5,Low,25
+39,True,SEC,40,Rostov-on-Don,40,South,32,Mall,60,Intermediate,31,Low,25
+40,False,Online,10,Rostov-on-Don,40,South,32,Online,35,Intermediate,31,Low,25
+41,True,Mega,30,Rostov-on-Don,40,South,32,Mall,60,Intermediate,31,Low,25
+42,True,Mall,50,St. Petersburg,36,Northwestern,8,Mall,60,Remote,5,Intermediate,43
+43,False,SEC,40,St. Petersburg,36,Northwestern,8,Mall,60,Remote,5,Intermediate,43
+44,True,Mall,50,Samara,44,Volga,48,Mall,60,Intermediate,31,Low,25
+45,True,Mall,50,Samara,44,Volga,48,Mall,60,Intermediate,31,Low,25
+46,True,SEC,40,Sergiyev Posad,32,Central,56,Mall,60,Populous,57,Intermediate,43
+47,True,SEC,40,Surgut,24,Ural,24,Mall,60,Remote,5,High,60
+48,True,SEC,40,Tomsk,4,Siberian,40,Mall,60,Remote,5,Low,25
+49,True,SEC,40,Tyumen,48,Ural,24,Mall,60,Remote,5,High,60
+50,True,Mall,50,Tyumen,48,Ural,24,Mall,60,Remote,5,High,60
+51,False,Mall,50,Tyumen,48,Ural,24,Mall,60,Remote,5,High,60
+52,True,Mall,50,Ufa,46,Volga,48,Mall,60,Intermediate,31,Low,25
+53,True,Mall,50,Ufa,46,Volga,48,Mall,60,Intermediate,31,Low,25
+54,False,Mega,30,Khimki,2,Central,56,Mall,60,Populous,57,Intermediate,43
+55,True,Online,10,None,50,None,0,Online,35,Online,25,High,60
+56,True,SEC,40,Chekhov,30,Central,56,Mall,60,Populous,57,Intermediate,43
+57,True,Shop,20,Yakutsk,54,Eastern,16,Shop,10,Remote,5,Intermediate,43
+58,True,Mall,50,Yakutsk,54,Eastern,16,Mall,60,Remote,5,Intermediate,43
+59,True,SEC,40,Yaroslavl,16,Central,56,Mall,60,Populous,57,Intermediate,43
