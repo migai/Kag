@@ -1,17 +1,71 @@
-merge item cat1234 into items db, along with cluster code
-make shops db clear and easy feature loading columns
-clean up sales_train per previous instructions and post clean version for Andreas
+sales_train is ordered by date_block_num, then by (roughly) shop_id, then (roughly) by item_id
+--> make sure this is shuffled before feeding into model
+
+look at monthly sales of items at small price vs. big price... if there is a difference, it might make sense to do two models, kind of like ensembling, but one for big price rows/items, and one for low price rows/items  (or item counts instead of price)
+
+
+#All item ids that are being sold in the last month in the train data
+sales_train[sales_train.date_block_num==33]["item_id"]
+print(sales_train[sales_train.date_block_num==33]["item_id"].nunique())
+# All item ids from all times
+print(sales_train.item_id.nunique())
+
+# Wow: more than 3/4 of items out of sale. But makes sense. Music titles, old programs, old consoles and PCs
+
+--> if no sales the last 2-3 months, delete from train, and predict zero sales for Nov 2015
+--> items with sales in 2015 sept but not oct: perhaps need lag(2month) instead of 1
+
+Is it true that the train data does not show all data? That random rows (30% or so) are missing? Maybe it is an idea to construct these rows and fill these NaN values with something meaningul? A moving average or something? These values for train could be learned through a model to then feed a complete dataset into the final algorithm... (easily written - already scared thinking of implementing it :-) )
+--> add shop_item empty rows for test pairs not in sales_train
+--> train on month 0 to get value for shop_item at month 0 (or, maybe start at 20)
+      then on month 1 to get values to put into shop_item at month 1 (perhaps with 1mo time lag data)
+	  etc., until we fill up dummy values for at least the most relevant months (20-33? 32-33?)
+	  Then,  train on all data
+Or, take mean value of all others in same item category_code with the given test shop_id
+
+Shops data: include continuous variables for city pop, fd popdens, fd gdp/person (some high avg. for online stores with fd = None); add another continuous variable: city pop / fd pop dens  (i.e., giving some idea of importance of the city to the surrounding area)... scale these with std scalar from 0 to 1 or -1 to 1...?
+Try better encoding for categ. variables in shops and items... mean encoding? std scalar? to help with running linear regression model.
 
 
 
+# Aggregate to monthly level the required metrics
 
-Ok in week 2 of the course it was said that score should be 1,16777
+monthly_sales = train.groupby(["month","shop_id","item_id"])[
+    "date","item_price","item_cnt_day"].agg({"date":["min",'max'],"item_price":"mean","item_cnt_day":"sum"})
+	
+	
 
-"A good exercise is to reproduce previous_value_benchmark. As the name suggest - in this benchmark for the each shop/item pair our predictions are just monthly sales from the previous month, i.e. October 2015.
+Add Holiday feature...  also need weekend??maybe
+holiday_dict = {
+    0: 6,
+    1: 3,
+    2: 2,
+    3: 8,
+    4: 3,
+    5: 3,
+    6: 2,
+    7: 8,
+    8: 4,
+    9: 8,
+    10: 5,
+    11: 4,
+}
+new_train['holidays_in_month'] = new_train['month'].map(holiday_dict)
 
-The most important step at reproducing this score is correctly aggregating daily data and constructing monthly sales data frame. You need to get lagged values, fill NaNs with zeros and clip the values into [0,20] range. If you do it correctly, you'll get precisely 1.16777 on the public leaderboard.
 
-Generating features like this is a necessary basis for more complex models. Also, if you decide to fit some model, don't forget to clip the target into [0,20] range, it makes a big difference."
+Russian Stock Exchange Trading Volume (in Trillions)
+moex = {
+    12: 659, 13: 640, 14: 1231,
+    15: 881, 16: 764, 17: 663,
+    18: 743, 19: 627, 20: 692,
+    21: 736, 22: 680, 23: 1092,
+    24: 657, 25: 863, 26: 720,
+    27: 819, 28: 574, 29: 568,
+    30: 633, 31: 658, 32: 611,
+    33: 770, 34: 723,
+}
+new_train['moex_value'] = new_train.date_block_num.map(moex)
+
 
 *********************************
 *********************************
@@ -21,50 +75,10 @@ pearson (default) looks for linear correlation, and I need something more like c
 
 *********************************
 **** TO DO IF TIME PERMITS:  ****
-1) check item IDs in shop 9, make sure they are covered elsewhere by other shops, and that they don't forecast sales of other items or at other shops... if shop 9 is irrelevant (and, since it isn't in the test set), drop shop 9 from training dataset
 
-2) do the same for shop 13 (supermarket)
 
-3) complete the investigation of "nasty" shop-item pairs, and see if we can do something special about them
-
-4) look at variance in item_price vs. time (vs. shop, shop_category,item_category,...) and see if anything is going to blow up on us, or if anything is predictive
-
-*********************************
-*********************************
-
-5) Adjust data file column names for conformity and readability:
-En_Name in item_categories_augmented and item_categories_transl --> en_cat_name
-also, change other column names for readability and conformity to:
-item_category_name,item_category_id,en_cat_name,item_category1,item_category2,item_category3,item_category4,item_cat_tested
-
-En_Name in shops transl --> en_shop_name
-multiple changes in shops_augmented column titles:
-now use:  shop_name,shop_id,en_shop_name,shop_city,shop_category,shop_federal_district,shop_city_population,shop_tested
-
-En_name in items_transl --> en_item_name
-
-***********************************
-items dataset prprocessing:
-- add column for T/F if in test dataset
-- add colum for total rows in train dataset
-- add column for total units sold in train dataset
-- sort or group by category and plot histograms of each(?)
-
-6) NLP for items dataset
-6.0) first try to find some n-grams by looking between nasty characters
-6.1) remove nasty characters from translation column
-6.1b) look at short words (2-3-4 letters), and see if they are acronyms or abbreviations that can be made uniform
-6.2a) do a TF-IDF kind of thing --> less weight for ngrams that appear most often
-6.2b) create 1, 2, and 3 ngram 1-hot vectors
-6.3) encode each item into 1-hot vectors
-6.4) determine cosine distance (or other) similarity and group accordingly(?)
-
-6.5) establish a minimum similarity cutoff for grouping items, and create new feature groups
-6.6) explore the unused items (not in test dataset) and see what feature groups they fall into, and if they are relevant for training
-
-************************************
-
-7) revisit shops, item_categories, correlations:
+revisit shops, item_categories, correlations:
+********************************************
 
 7.1) what is the story with shop 36 having so few training rows?
 
@@ -73,11 +87,46 @@ items dataset prprocessing:
 -  make heatmap based on item category correlations rather than item correlations
 
 7.3) shops dataset -- add columns with 
+- min month present in train / max month present in train... lower weight to ones that have no sales close to Nov 2015
 - top 3 item sales
 - unit quantities for those 3 sales
 - total number of units sold as per the train dataset
 - total rows in the train dataset
 
-7.4) same for item_categories
 
+1) check item IDs in shop 9, make sure they are covered elsewhere by other shops, and that they don't forecast sales of other items or at other shops... if shop 9 is irrelevant (and, since it isn't in the test set), drop shop 9 from training dataset
+
+2) do the same for shop 13 (supermarket)
+
+3) complete the investigation of "nasty" shop-item pairs (few or no training rows, but are present in test), and see if we can do something special about them
+
+4) look at variance in item_price vs. time (vs. shop, shop_category,item_category,...) and see if anything is going to blow up on us, or if anything is predictive
+
+*********************************
+*********************************
+
+***********************************
+items dataset preprocessing: 
+- min month present in train / max month present in train... lower weight to ones that have no sales close to Nov 2015
+- add column for T/F if in test dataset
+- add colum for total rows in train dataset
+- add column for total units sold in train dataset
+- sort or group by category and plot histograms of each(?)
+
+6.2a) do a TF-IDF kind of thing --> less weight for ngrams that appear most often
+and, less weight for ngrams that appear with high counts in en_50k
+
+6.6) explore the unused items (not in test dataset) and see what feature groups they fall into, and if they are relevant for training
+
+************************************
+
+****************************************************************************************
+
+Ok in week 2 of the course it was said that score should be 1,16777
+
+"A good exercise is to reproduce previous_value_benchmark. As the name suggest - in this benchmark for the each shop/item pair our predictions are just monthly sales from the previous month, i.e. October 2015.
+
+The most important step at reproducing this score is correctly aggregating daily data and constructing monthly sales data frame. You need to get lagged values, fill NaNs with zeros and clip the values into [0,20] range. If you do it correctly, you'll get precisely 1.16777 on the public leaderboard.
+
+Generating features like this is a necessary basis for more complex models. Also, if you decide to fit some model, don't forget to clip the target into [0,20] range, it makes a big difference."
 
