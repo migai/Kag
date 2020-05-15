@@ -1,5 +1,16 @@
 sales_train is ordered by date_block_num, then by (roughly) shop_id, then (roughly) by item_id
---> make sure this is shuffled before feeding into model
+--> do we need to shuffle this before feeding into model?  definitely if we do k-fold train/val split
+
+
+https://www.tensorflow.org/tutorials/structured_data/feature_columns#import_tensorflow_and_other_libraries
+--> use tensorflow embedding_column to encode categorical variables with many labels/dimensions
+
+
+https://medium.com/dunder-data/from-pandas-to-scikit-learn-a-new-exciting-workflow-e88e2271ef62
+https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.KBinsDiscretizer.html
+KBinsDiscretizer from scikit-learn
+--> reduce the number of variants of continuous variables like price
+
 
 look at monthly sales of items at small price vs. big price... if there is a difference, it might make sense to do two models, kind of like ensembling, but one for big price rows/items, and one for low price rows/items  (or item counts instead of price)
 
