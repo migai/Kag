@@ -1,3 +1,11 @@
+ffill to compute item price in test rows
+
+for trends in data, if you order columns by type, then by time lag, then you can use pd.DF.diff or .pct_change method with axis= columns
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.diff.html#pandas.DataFrame.diff
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.pct_change.html#pandas.DataFrame.pct_change
+
+rolling function in pandas seems interesting for computing time-shifted numbers; likely simpler for now to use 'shift' function, possibly with 'align' axes
+
 sales_train is ordered by date_block_num, then by (roughly) shop_id, then (roughly) by item_id
 --> do we need to shuffle this before feeding into model?  definitely if we do k-fold train/val split
 
