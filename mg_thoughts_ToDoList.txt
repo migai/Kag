@@ -1,3 +1,14 @@
+-> do the encoding with log or sqrt compression... set nbins = max_bins being used in LGBM
+-> consider embedding to better encode the categories
+-> if shop-item sales only in last 1 or 2 months, then just average or trend them and hard-wire to predictions
+-> consider clustering shops by what they sell... set up a graph with shops and items (be sure I can differentiate the two, either by adding a string or by increasing item_id by +60), with weights between shops and item nodes = sales in last 3 mo, 6mo, 12mo, all time(?)... then cluster to find the best groups and assign as cluster code for shops.
+
+--> flatten out xmas sales? (clip, or interpolate)
+--> set = 0 prediction for items that have 0 sales in last 6 months (?)
+
+--> cartesian product interpolate / infer sales by (1) interpolating from existing shop-item pairs in the same cluster, then (2) training the model, then going back to fill the sales in, then train again, re-fill, etc. until it seems to converge.
+
+
 ffill to compute item price in test rows
 
 for trends in data, if you order columns by type, then by time lag, then you can use pd.DF.diff or .pct_change method with axis= columns
