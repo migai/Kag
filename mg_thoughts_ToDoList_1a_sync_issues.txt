@@ -1,0 +1,244 @@
+pd.scatter_matrix(df) plots pairwise scatter plots between all features, in a grid
+df.corr() --> plt.matshow(...)  .... and do k-means clustering/grouping, then try
+df.mean().sort_values().plot(style='.') to see if there are groupings of feature categories 
+
+Limit Validation/Eval set to only those shop-item pair values found in test.  It is irrelevant for us to validate on s-i pairs not in test set.
+For different validation strategies, consider the following "k-fold" "time-series" splitting:
+train(10-32) val(33)
+train(10-31) val(32)
+train(10-21) val(22)
+--------
+Validation in presence of time component
+f) KFold scheme in time series
+In time-series task we usually have a fixed period of time we are asked to predict. Like day, week, month or arbitrary period with duration of T.
+	1. Split the train data into chunks of duration T. Select first M chunks.
+	2. Fit N diverse models on those M chunks and predict for the chunk M+1. Then fit those models on first M+1 chunks and predict for chunk M+2 and so on, until you hit the end. After that use all train data to fit models and get predictions for test. Now we will have meta-features for the chunks starting from number M+1 as well as meta-features for the test.
+Now we can use meta-features from first K chunks [M+1,M+2,..,M+K] to fit level 2 models and validate them on chunk M+K+1. Essentially we are back to step 1. with the lesser amount of chunks and meta-features instead of features.
+
+
+
+Look at test set ... fraction of rows per category/categories... maybe we find one type of category that dominates the test set, and can focus our attentions there
+
+Parameter search for the model:
+Look into the use of DART  (ensemble several LGBM models with different feature inputs)
+also, using StackNet to ensemble several LGBM models
+
+And first there are many parameters that control the tree building process. Max_depth is the maximum depth of a tree. And of course, the deeper a tree can be grown the better it can fit a dataset. So increasing this parameter will lead to faster fitting to the train set. Depending on the task, the optimal depth can vary a lot, sometimes it is 2, sometimes it is 27. If you increase the depth and cannot get the model to overfit, that is, the model is becoming better and better on the validation set as you increase the depth. It can be a sign that there are a lot of important interactions to extract from the data. So it's better to stop tuning and try to generate some features. I would recommend to start with a max_depth of about seven. Also remember that as you increase the depth, the learning will take a longer time. So do not set depth to a very higher values unless you are 100% sure you need it. In LightGBM, it is possible to control the number of leaves in the tree rather than the maximum depth. It is nice since a resulting tree can be very deep, but have small number of leaves and not over fit.
+regularization parameters, min_child_weight, lambda, alpha and others. The most important one is min_child_weight. If we increase it, the model will become more conservative. If we set it to 0, which is the minimum value for this parameter, the model will be less constrained. In my experience, it's one of the most important parameters to tune in XGBoost and LightGBM. Depending on the task, I find optimal values to be 0, 5, 15, 300,
+min_samples_leaf is a regularization parameter similar to min_child_weight from XGBoost and the same as min_data_leaf from LightGBM. 
+XGBoost					LightGBM
+max_depth				max_depth/num_leaves --> start with 7
+subsample				bagging fraction
+colsample_bytree		feature_fraction
+colsample_bylevel		feature_fraction
+min_child_weight		min_data_in_leaf
+	lambda					lambda_l1
+	alpha					lambda_l2
+eta						learning rate
+num_round				num_iterations
+
+Possible feature:
+1) n days between sales at a shop (by shop-item pair)
+2) total sales of past 3 months, by shop-item, by shop, by item, by item cat, by item cluster
+
+3) add "isnull" feature column to cartesian product rows that don't match train set
+and, then replace the 0 sales with something like mean or median...
+4) lag by 1week, 2weeks, 3weeks... (per month group)
+---> can split train/val by weeks instead of months
+What if we do grouping by week instead of by month, then do lags by week, and y output is sum of previous 4 weeks * number of days month 34/28?
+(train/val/test based on weekly grouping... post processing before results submission does weeks 1-4 of month 34 * 30/28)
+
+Categorical encoding:
+1) create mean encoding from train set only (don't rely on any data in val set, or predictions will be biased), then apply that train_mean_encoding to both train and val (and test) sets
+2) cartesian product... mean encodings by cluster code or itemid or shopid
+I also want to remind you about correct validation process. During all local experiments, you should at first split data in X_tr and X_val parts. Estimate encodings on X_tr, map them to X_tr and X_val, and then regularize them on X_tr and only after that validate your model on X_tr / X_val split. Don't even think about estimating encodings before splitting the data. And at submission stage, you can estimate encodings on whole train data. Map it to train and test, then apply regularization on training data and finally fit a model. And note that you should have already decided on regularization method and its strength in local experiments.
+
+Numerical data xforms:
+1) rank (sort data, give integer index to each one... outliers are totally compressed)
+scipy.stats.rankdata
+
+2) log or sqrt
+np.log1p(x) or np.sqrt(x+2/3) or...
+
+3) winsorization
+clip at 1st and 99th ptile then scale
+
+4) standard scaler or minmax scaler
+can expand values to highlight features we think are more important
+
+0) smoothing (exponential smoothing?), probably like #2 above
+
+
+Ensembling:
+For time series, suggested models include:
+Autoregressive models, ARIMA, linear regression, GBMs, DL, LSTMs
+Categorical features --> GBMs, linear models, DL, LibFM, libFFm
+Use Residual Boosting
+
+ffill to compute item price in test rows
+
+for trends in data, if you order columns by type, then by time lag, then you can use pd.DF.diff or .pct_change method with axis= columns
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.diff.html#pandas.DataFrame.diff
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.pct_change.html#pandas.DataFrame.pct_change
+
+rolling function in pandas seems interesting for computing time-shifted numbers; likely simpler for now to use 'shift' function, possibly with 'align' axes
+
+sales_train is ordered by date_block_num, then by (roughly) shop_id, then (roughly) by item_id
+--> do we need to shuffle this before feeding into model?  definitely if we do k-fold train/val split
+
+
+https://www.tensorflow.org/tutorials/structured_data/feature_columns#import_tensorflow_and_other_libraries
+--> use tensorflow embedding_column to encode categorical variables with many labels/dimensions
+
+
+https://medium.com/dunder-data/from-pandas-to-scikit-learn-a-new-exciting-workflow-e88e2271ef62
+https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.KBinsDiscretizer.html
+KBinsDiscretizer from scikit-learn
+--> reduce the number of variants of continuous variables like price
+
+
+look at monthly sales of items at small price vs. big price... if there is a difference, it might make sense to do two models, kind of like ensembling, but one for big price rows/items, and one for low price rows/items  (or item counts instead of price)
+
+
+#All item ids that are being sold in the last month in the train data
+sales_train[sales_train.date_block_num==33]["item_id"]
+print(sales_train[sales_train.date_block_num==33]["item_id"].nunique())
+# All item ids from all times
+print(sales_train.item_id.nunique())
+# Wow: more than 3/4 of items out of sale. But makes sense. Music titles, old programs, old consoles and PCs
+
+--> if no sales the last 2-3 months, delete from train, and predict zero sales for Nov 2015
+--> items with sales in 2015 sept but not oct: perhaps need lag(2month) instead of 1
+
+Is it true that the train data does not show all data? That random rows (30% or so) are missing? Maybe it is an idea to construct these rows and fill these NaN values with something meaningul? A moving average or something? These values for train could be learned through a model to then feed a complete dataset into the final algorithm... (easily written - already scared thinking of implementing it :-) )
+--> add shop_item empty rows for test pairs not in sales_train
+--> train on month 0 to get value for shop_item at month 0 (or, maybe start at 20)
+      then on month 1 to get values to put into shop_item at month 1 (perhaps with 1mo time lag data)
+	  etc., until we fill up dummy values for at least the most relevant months (20-33? 32-33?)
+	  Then,  train on all data
+Or, take mean value of all others in same item category_code with the given test shop_id
+
+Shops data: include continuous variables for city pop, fd popdens, fd gdp/person (some high avg. for online stores with fd = None); add another continuous variable: city pop / fd pop dens  (i.e., giving some idea of importance of the city to the surrounding area)... scale these with std scalar from 0 to 1 or -1 to 1...?
+Try better encoding for categ. variables in shops and items... mean encoding? std scalar? to help with running linear regression model.
+
+
+
+# Aggregate to monthly level the required metrics
+
+monthly_sales = train.groupby(["month","shop_id","item_id"])[
+    "date","item_price","item_cnt_day"].agg({"date":["min",'max'],"item_price":"mean","item_cnt_day":"sum"})
+	
+	
+
+Add Holiday feature...  also need weekend??maybe
+holiday_dict = {
+    0: 6,
+    1: 3,
+    2: 2,
+    3: 8,
+    4: 3,
+    5: 3,
+    6: 2,
+    7: 8,
+    8: 4,
+    9: 8,
+    10: 5,
+    11: 4,
+}
+new_train['holidays_in_month'] = new_train['month'].map(holiday_dict)
+
+
+Russian Stock Exchange Trading Volume (in Trillions)
+moex = {
+    12: 659, 13: 640, 14: 1231,
+    15: 881, 16: 764, 17: 663,
+    18: 743, 19: 627, 20: 692,
+    21: 736, 22: 680, 23: 1092,
+    24: 657, 25: 863, 26: 720,
+    27: 819, 28: 574, 29: 568,
+    30: 633, 31: 658, 32: 611,
+    33: 770, 34: 723,
+}
+new_train['moex_value'] = new_train.date_block_num.map(moex)
+
+
+*********************************
+*********************************
+change type of correlation method in shops and shops-categories...
+pearson (default) looks for linear correlation, and I need something more like cosine similarity
+(also, pearson and other methods give values from -1 to +1, so I shouldn't filter out negative values perhaps)
+
+*********************************
+**** TO DO IF TIME PERMITS:  ****
+
+
+revisit shops, item_categories, correlations:
+********************************************
+
+7.1) what is the story with shop 36 having so few training rows?
+
+7.2) sort columns of correlation heatmap so similar shops are adjacent in the plot
+-  try sorting by shop category, shop district, sum() of correlation column for a shop
+-  make heatmap based on item category correlations rather than item correlations
+
+7.3) shops dataset -- add columns with 
+- min month present in train / max month present in train... lower weight to ones that have no sales close to Nov 2015
+- top 3 item sales
+- unit quantities for those 3 sales
+- total number of units sold as per the train dataset
+- total rows in the train dataset
+
+
+1) check item IDs in shop 9, make sure they are covered elsewhere by other shops, and that they don't forecast sales of other items or at other shops... if shop 9 is irrelevant (and, since it isn't in the test set), drop shop 9 from training dataset
+
+2) do the same for shop 13 (supermarket)
+
+3) complete the investigation of "nasty" shop-item pairs (few or no training rows, but are present in test), and see if we can do something special about them
+
+4) look at variance in item_price vs. time (vs. shop, shop_category,item_category,...) and see if anything is going to blow up on us, or if anything is predictive
+
+*********************************
+*********************************
+
+***********************************
+items dataset preprocessing: 
+- min month present in train / max month present in train... lower weight to ones that have no sales close to Nov 2015
+- add column for T/F if in test dataset
+- add colum for total rows in train dataset
+- add column for total units sold in train dataset
+- sort or group by category and plot histograms of each(?)
+
+6.2a) do a TF-IDF kind of thing --> less weight for ngrams that appear most often
+and, less weight for ngrams that appear with high counts in en_50k
+
+6.6) explore the unused items (not in test dataset) and see what feature groups they fall into, and if they are relevant for training
+
+************************************
+
+****************************************************************************************
+
+Ok in week 2 of the course it was said that score should be 1,16777
+
+"A good exercise is to reproduce previous_value_benchmark. As the name suggest - in this benchmark for the each shop/item pair our predictions are just monthly sales from the previous month, i.e. October 2015.
+
+The most important step at reproducing this score is correctly aggregating daily data and constructing monthly sales data frame. You need to get lagged values, fill NaNs with zeros and clip the values into [0,20] range. If you do it correctly, you'll get precisely 1.16777 on the public leaderboard.
+
+Generating features like this is a necessary basis for more complex models. Also, if you decide to fit some model, don't forget to clip the target into [0,20] range, it makes a big difference."
+
+Most Important Features (roughly in order):
+item_sales_L1
+y_sales_L1 (=target)
+shop_sales_L1
+month
+item_sales_L2
+item_id
+y_sales_L2
+item_cat0 (original category)
+item_cluster
+item_cat3_sales_L1
+item_cluster_sales_L1
+item_cat0_sales_L1
+y_sales_L3
+shop_sales_L2
+item_sales_L3
+y_sales_L6

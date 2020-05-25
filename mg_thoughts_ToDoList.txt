@@ -1,12 +1,14 @@
 -> do the encoding with log or sqrt compression... set nbins = max_bins being used in LGBM
 -> consider embedding to better encode the categories
--> if shop-item sales only in last 1 or 2 months, then just average or trend them and hard-wire to predictions
 -> consider clustering shops by what they sell... set up a graph with shops and items (be sure I can differentiate the two, either by adding a string or by increasing item_id by +60), with weights between shops and item nodes = sales in last 3 mo, 6mo, 12mo, all time(?)... then cluster to find the best groups and assign as cluster code for shops.
 
---> flatten out xmas sales? (clip, or interpolate)
+--> flatten out xmas sales? (clip, or interpolate)... does clipping to 20 help much?
+  --> can group by item or shop_item or shop or category, do linear regression with month23, month11 first set equal to avg(month22/24 or month10/12)
 --> set = 0 prediction for items that have 0 sales in last 6 months (?)
+-> if shop-item sales only in last 1 or 2 months, then just average or trend them and hard-wire to predictions
 
---> cartesian product interpolate / infer sales by (1) interpolating from existing shop-item pairs in the same cluster, then (2) training the model, then going back to fill the sales in, then train again, re-fill, etc. until it seems to converge.
+--> cartesian product interpolate / infer sales by (1) interpolating from existing shop-item pairs in the same cluster -- probably best to average the item sales within the cluster, by shop (i.e., pull all elements from matching cluster that have same shop_id, and average the sales of all items in this cluster-shop group)... (or, average the sales of all items in the cluster, scaled first by total sales per shop in the last 6 months) , then (2) training the model, then going back to fill the sales in, then train again, re-fill, etc. until it seems to converge.
+or, (3) linear fit to cluster sales by shop vs. month
 
 
 ffill to compute item price in test rows
