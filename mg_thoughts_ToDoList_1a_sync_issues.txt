@@ -1,3 +1,142 @@
+grams to dump: ['yo']
+keep 'vs','fs' (no lemmatize)
+doubles of anything in top 50
+eliminate single character grams
+eliminate "and" as a 1gram
+
+merge 'office mac home*' and 'office home*'
+
+merge firm, business, company into 'business'
+
+merge educational, development, 1c, 'methodical material 1c', 'secret profraboty 1c', 'collection of task 1c', 'interactive training course', 'education collection home trainer', '1c publishing', 'school russian', 'russian history', school, education, lesson, +test?
+enterprise 8, accounting 8, * 8 --> education 8
+
+merge 2dvd, '2 dvd' '5 dvd', '4 dvd' , 3dvd, '3 dvd' into dvd
+merge 'dvd and 3d bluray dvd', '3d bluray dvd and bluray dvd' , 'bluray dvd 3d' and '3d bluray dvd' , '3d bluray dvd and 2 disc bluray dvd', 2 disc 3 3d bluray dvd and bluray dvd'
+
+merge '3 bluray dvd' and '4 bluray dvd' and '2 bluray dvd' and 'bluray dvd 4k', 'dvd and bluray dvd', 'bluray dvd and dvd' and '2dvd and bluray dvd' , '2bd' into 'bluray dvd'
+
+merge 'compact', 'cd mirex cd' 'cd', and 'vinyl' into music
+(and 'jewel', 'jewel russian version' ?)
+and cd production firm
+and cd of local production
+
+'audiobooks 1c' into 'audiobooks'
+
+merge 'toy','gift edition', 'soft toy','set of 2 soft toy', souvenir,sticker into gift
+
+'card', , 'ticket' , into 'payment card'
+
+merge 'online access', 'version download', 'download version', 'digital' 'online' 'digital edition' 'online edition' 'download' 'digital version' 'without disc' into 'online version' --> 'order', 'subscription','year subscription' , '1 year license' ? 'net carrier'
+'desktop 1 year renewal card' 
+'desktop 1 year base box'
+'desktop 1 year base download pack'
+'desktop 1 year renewal retail pack'
+'desktop 1 year base retail pack'
+'device 1 year renewal retail pack'
+'device 1 year base retail pack'
+'device 1 year base box'
+'dev 1 year renewal rp'
+'extension of license 1 year*'
+'universal license 1 year to 5 device'
+'digital version epay'
+
+collector and 'collector edition' into 'collector version'
+standard into and 'standard edition' into 'standard version'
+'russian edition' 'russian' 'ru' into 'russian version'
+merge 'device russian edition *' to 'device russian version'
+'english edition' 'english' 'en' 'eng' 'engl' into 'english version'
+
+'accessory game' to 'game accessory'
+
+1c
+abbyy or 'abbyy lingvo'
+adventure of tintin
+advanced warfare
+army of two
+'*assasin creed * into 'assasin creed computer game'
+angry bird
+batman
+battlefield
+behind enemy line(s)
+black ops
+borderland * 
+call of duty
+chaggington funny train
+child of light
+dark soul
+dead space
+disney infinity*
+dragon age
+elder scroll
+far cry
+final fantasy
+game of throne
+god of war
+grand theft auto
+harry potter
+james bond
+lord of ring
+	hobbit ?
+mario
+masha and bear
+max payne
+medal of honor
+men in black
+metal gear solid
+mickey mouse
+might and magic
+modern warfare
+mortal kombat
+need speed
+ninja storm
+pirate of caribbean
+plant v zombie
+pro evolution
+resident evil
+secret of unicorn
+shadow of mordor
+sherlock holmes
+sid meiers civilization
+skylander
+sniper elite
+star war
+stick of truth
+street fighter
+tiger wood
+tom clancy*(s)
+tomb raider
+transformer
+walking dead
+'warhammer *' into 'warhammer abc computer game'
+watch dog
+witcher
+world of warcraft
+
+lego* (lego harry potter) --> lego version
+
+
+'delivery of good'
+'order'??
+
+
+'kaspersky*' to 'antivirus and security'
+'panda internet security' also
+'panda antivirus *'
+eset nod32 smart security
+drweb security space
+bitrix site manager
+virus
+
+'m kinect' into 'kinect'
+'ps move' 'p move' 'psmove' 'support p move' 'support any of the others...' ps2 and ps3 and ps4 'p 4' 'p 3' 'p 2' psp psvita 'p vita' 'p vita 1000' 'ps vita' 'pspro' into 'playstation platform' --> add sony?
+xbox and 'x box' and 'xbox one' and 'xbox 360' and 'xbox360' and 'box360' 'xbox live' 'box live' and 'm kinect' 'kinect' 'mskinect' ?? and 'box' ??  into 'xbox platform' --> add microsoft? (replace ms)
+
+
+delete: ['weighed in', 'given y'
+
+
+
 pd.scatter_matrix(df) plots pairwise scatter plots between all features, in a grid
 df.corr() --> plt.matshow(...)  .... and do k-means clustering/grouping, then try
 df.mean().sort_values().plot(style='.') to see if there are groupings of feature categories 

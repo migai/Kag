@@ -1,3 +1,5 @@
+%quickref  --> cool command in ipynb notebook to bring up a reference sheet with shortcuts, commands, etc.
+
 -> do the encoding with log or sqrt compression... set nbins = max_bins being used in LGBM
 -> consider embedding to better encode the categories
 -> consider clustering shops by what they sell... set up a graph with shops and items (be sure I can differentiate the two, either by adding a string or by increasing item_id by +60), with weights between shops and item nodes = sales in last 3 mo, 6mo, 12mo, all time(?)... then cluster to find the best groups and assign as cluster code for shops.
