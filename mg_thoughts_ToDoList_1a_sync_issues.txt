@@ -1,11 +1,23 @@
-grams to dump: ['yo']
+Cartesian Product summary:
+1) If we know an item and a shop are active in a certain month, we can reasonably assume that if the actual shop-item pair is not present in the test set, we can insert it with sales=0.  (This assumes that the sales_train set is complete, and contains all sales that happened for every shop-item pair.)
+Why do we insert this? Because we know the shop and item exist, and telling the model that this pair has 0 sales that month is useful in training.  It is not incorrect.  It gives some extra information when the training of the model looks at the particular features/categories that this shop-item pair belong to.
+2) What we don't want to do is insert cartesian product pairs where we cannot be sure they actually exist. (Such as, before a product is released, or after a product is discontinued, or if a shop shuts down entirely.)  If we were to insert such cartesian product rows, then we would be giving the model possibly incorrect information -- that the pair exists (or could exist) and it has zero sales.  This is different from leaving it out of the training altogether, in which case we are not telling the model that we know the pair had zero sales.
+(again, the effectiveness of this approach relies in large part on the idea that the training set is complete, and captures every possible sale that there was)
+3) As to why we only fill a given month with the cartesian product of shops and items that are present in the same month... It is our best guess at what shops and items are theoretically possible to be paired that month.  If we fill with cartesian product pairs that are not present in the given month, but that are present in the following month, it is nice that we have matching shop-item pairs when we do a month time-lag feature, but we are giving possibly incorrect information by setting sales of possibly nonexistent shops/items to 0 rather than NA.
+It would be interesting to consider having a given month include the cartesian products of all previous months as well as the given month.  We know historically that the shops and items existed, so it is not terribly incorrect to claim those pairs had 0 sales in the given month.  The question becomes: is it better for the model to see shop-item pairs have numerous sales in early months, but then drop to zero, or... is it better for the model to see shop-item pairs with numerous sales in early months just disappear at a particular month?
+I suspect it is better to inform the model of zero sales, to prevent it from inferring nonzero sales because of related features, if it has no record of the pair's existence, or that it has zero sales, but used to exist.
+However, this "cumulative" cartesian product could make the dataset extremely large and difficult to process.  So, if resources are tight, then just go with the cartesian product within a month.
+
+
+
 keep 'vs','fs' (no lemmatize)
-doubles of anything in top 50
+doubles 
 eliminate single character grams
-eliminate "and" as a 1gram
+eliminate "and" and "yo" as a 1gram
+delete: ['weighed in', 'given y'
 
+merge 'yo' into 'yo yo'
 merge 'office mac home*' and 'office home*'
-
 merge firm, business, company into 'business'
 
 merge educational, development, 1c, 'methodical material 1c', 'secret profraboty 1c', 'collection of task 1c', 'interactive training course', 'education collection home trainer', '1c publishing', 'school russian', 'russian history', school, education, lesson, +test?
@@ -20,8 +32,6 @@ merge 'compact', 'cd mirex cd' 'cd', and 'vinyl' into music
 (and 'jewel', 'jewel russian version' ?)
 and cd production firm
 and cd of local production
-
-'audiobooks 1c' into 'audiobooks'
 
 merge 'toy','gift edition', 'soft toy','set of 2 soft toy', souvenir,sticker into gift
 
@@ -133,7 +143,6 @@ virus
 xbox and 'x box' and 'xbox one' and 'xbox 360' and 'xbox360' and 'box360' 'xbox live' 'box live' and 'm kinect' 'kinect' 'mskinect' ?? and 'box' ??  into 'xbox platform' --> add microsoft? (replace ms)
 
 
-delete: ['weighed in', 'given y'
 
 
 
