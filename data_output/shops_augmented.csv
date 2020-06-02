@@ -39,7 +39,7 @@ shop_name,shop_id,en_shop_name,shop_city,shop_category,shop_federal_district,sho
 "Новосибирск ТЦ ""Мега""",37,"Novosibirsk shopping center ""Mega""",Novosibirsk,Mega,Siberian,1419007,True
 "Омск ТЦ ""Мега""",38,"Omsk TC ""Mega""",Omsk,Mega,Siberian,1129281,True
 "РостовНаДону ТРК ""Мегацентр Горизонт""",39,"RostovNaDonu TRC ""Megacenter Horizon""",Rostov-on-Don,SEC,South,1074482,True
-"РостовНаДону ТРК ""Мегацентр Горизонт"" Островной",40,"RostovNaDonu TRC ""Megacenter Horizon"" Island",Rostov-on-Don,Online,South,1074482,False
+"РостовНаДону ТРК ""Мегацентр Горизонт"" Островной",40,"RostovNaDonu TRC ""Megacenter Horizon"" Island",None,Online,None,20000000,False
 "РостовНаДону ТЦ ""Мега""",41,"RostovNaDonu TC ""Mega""",Rostov-on-Don,Mega,South,1074482,True
 "СПб ТК ""Невский Центр""",42,"St. Petersburg TK ""Nevsky Center""",St. Petersburg,Mall,Northwestern,5028000,True
 "СПб ТК ""Сенная""",43,"St. Petersburg TK ""Sennaya""",St. Petersburg,SEC,Northwestern,5028000,False
