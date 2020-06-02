@@ -39,7 +39,7 @@ shop_id,shop_tested,shop_type,shop_type_enc,shop_city,shop_city_enc,shop_federal
 37,True,Mega,30,Novosibirsk,38,Siberian,40,Mall,60,Remote,5,Low,25
 38,True,Mega,30,Omsk,18,Siberian,40,Mall,60,Remote,5,Low,25
 39,True,SEC,40,Rostov-on-Don,40,South,32,Mall,60,Intermediate,31,Low,25
-40,False,Online,10,Rostov-on-Don,40,South,32,Online,35,Intermediate,31,Low,25
+40,False,Online,10,None,50,None,0,Online,35,Online,25,High,60
 41,True,Mega,30,Rostov-on-Don,40,South,32,Mall,60,Intermediate,31,Low,25
 42,True,Mall,50,St. Petersburg,36,Northwestern,8,Mall,60,Remote,5,Intermediate,43
 43,False,SEC,40,St. Petersburg,36,Northwestern,8,Mall,60,Remote,5,Intermediate,43
