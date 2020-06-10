@@ -3,6 +3,16 @@ Sales by day for each shop... look at the 60 plots and characterize:
 2) clip shop 25 spike near 730
 2) clip shop 39 spike around day 1000
 
+3) group 57, 58
+4) group 12, 22, 42
+5) group 55 alone (?)
+6) find groups for 20, 9, 54, 27, 51, 30, (17, 43, 29)
+
+7) drop entirely shops 8, 13, 23, 32, 33, 40
+
+9) scale or augment shop 36
+
+
 --> what to do about shops with small dropouts? (fill from previous month?)
 shop 2/ days 20-30
 shop 4/ days 100-120
@@ -55,6 +65,9 @@ maybe shop 27 / days 140-180
 -----> compute std dev without values > 4x median ==> group by spikiness
 -----> compute relative surge from Dec 28-31 2013 and Dec 28-31 2014 (perhaps group by week and look at weeks 52 and 104 if they cover necessary range --> group by new-year-influence 2013, 2014 and/or 2013+2014
 
+---> consider some sort of merge with shops 50, 51?
+
+36 correlates best with 48... maybe fill fake data for 36 earlier month(s)
 
 plot again: use gray if not tested
 merge 0,1,11
