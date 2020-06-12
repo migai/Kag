@@ -3,12 +3,14 @@ Sales by day for each shop... look at the 60 plots and characterize:
 2) clip shop 25 spike near 730
 2) clip shop 39 spike around day 1000
 
+x) combine 23, 55 ?  55 closed 0 to 119; open 120 ...  23 open 1 to 117; closed 118
+
 3) group 57, 58
 4) group 12, 22, 42
 5) group 55 alone (?)
 6) find groups for 20, 9, 54, 27, 51, 30, (17, 43, 29)
 
-7) drop entirely shops 8, 13, 23, 32, 33, 40
+7) drop entirely shops 8, 13, (23-->55?), 32, 33, 40
 
 9) scale or augment shop 36
 
