@@ -1,27 +1,59 @@
-Sales by day for each shop... look at the 60 plots and characterize:
-1) clip shop 24 spike around day 450
-2) clip shop 25 spike near 730
-2) clip shop 39 spike around day 1000
+EDA/Clean/Feature Gen:
 
-x) combine 23, 55 ?  55 closed 0 to 119; open 120 ...  23 open 1 to 117; closed 118
+Definitely to do:
+	1)  clip shop 24 spike at day 438 -- clip to 200
+	and clip shop 25 spike at day 728 -- clip to 1000
+		20949	corporate package white shirt 1c interest 34 42 45 m	True	71	Gifts - Bags, Albums, Mats d / mouse	
+	3) multiply sales of shop 36
+		36 is open 1019 to 1033 = 15 days, in Oct. 2015... multiply by 31/15 all sales from this store  (then, can scale all months compared to days in Nov 2015, including for this store)
+	4) Delete these shops from sales_train: 
+		[8, 13, 23, 32, 33, 40]
 
-3) group 57, 58
-4) group 12, 22, 42
-5) group 55 alone (?)
-6) find groups for 20, 9, 54, 27, 51, 30, (17, 43, 29)
+	5) New Shop Grouping Feature (manual column added, based on correlations & clustering)
+		a) 57 and 58 strong group
+		b) 55 alone
+		c) 12, 22, 42
+		d) 9, 20
+		e) ?? find groups for 54, 27, 51, 30, (17, 43, 29)
+		f) group or merge 50 and 51?
+		g) combine remainder with other categorizations I've done
+		
+	6) New item cluster codes
 
-7) drop entirely shops 8, 13, (23-->55?), 32, 33, 40
 
-9) scale or augment shop 36
+Maybe:
+	1) scale sales by month, by multiplying by number of days in that month relative to Nov 2015
+		1b) include number of weekday counts / periodicity with high Saturday sales
+		1c) include Russian economic depression 2015
+	2) Try dropping shops 9 and/or 20 and see if score changes
+	3) Try adding back in some of the shops dropped above 
+	4) Try deleting categories 8, 80 (= 'tickets') and/or 81,82 (= 'net carriers')
+	5) add feature like rolling average / lag with different duration and shift 
+		(e.g., sales over past 6 weeks, past 2 months, or past 3 months perhaps)... will smooth out spikes... pd.DF.rolling doesn't seem to work in conjunction with grouping, so probably better to do my own calculations and merges
 
 
---> what to do about shops with small dropouts? (fill from previous month?)
-shop 2/ days 20-30
-shop 4/ days 100-120
-shop 14 / days near 250
-shop 18 / days 220-230
-shop 24 / days 100-120
-maybe shop 27 / days 140-180
+Later:
+	1) fill in dropouts of sales? (fill from previous month?)
+		shop 2/ days 20-30
+		shop 4/ days 100-120
+		shop 14 / days near 250
+		shop 18 / days 220-230
+		shop 24 / days 100-120
+		maybe shop 27 / days 140-180
+	2) ensembling: 
+		could predict sales in 2 or 3-month increments, then divide by 2 or 3, to help average out some of the spikes
+	3) cumsum as a feature?  
+		maybe item sales show a characteristic growth, then fall after a peak in time... different from (rolling) expanding??
+	4) shop 36 correlates best with 48... 
+		maybe fill fake data for 36 earlier month(s)
+
+Nope:
+	a) clip shop 39 spike at day 1017 -- clip to 100
+		it's a bunch of different dvd sales adding up to a lot; ok to let it slide I think
+	b) combine 23, 55 ?  55 closed 0 to 119; open 120 ...  23 open 1 to 117; closed 118
+		they don't have similar items; probably not related
+
+
 
 --> what to do about shops that close before Nov 2015? (None are tested!)
 8: day 0 to 90
@@ -67,30 +99,12 @@ maybe shop 27 / days 140-180
 -----> compute std dev without values > 4x median ==> group by spikiness
 -----> compute relative surge from Dec 28-31 2013 and Dec 28-31 2014 (perhaps group by week and look at weeks 52 and 104 if they cover necessary range --> group by new-year-influence 2013, 2014 and/or 2013+2014
 
----> consider some sort of merge with shops 50, 51?
-
-36 correlates best with 48... maybe fill fake data for 36 earlier month(s)
-
-plot again: use gray if not tested
-merge 0,1,11
-2: scale 0,150
-9: scale to 0,100
-12: scale to 0,400
-15: scale to 0, 300
-20: scale to 0,100
-24: scale to 0,300
-25: scale to 0,750
-55 scale to ylim = (0,300)
-
 extreme spikes: 9,12,20,55
 flat slope, spiky: 2, 3, 38, 42, 47
 flat slope, dominant new years: 5, 21
 neg slope, spiky: 4, 6, 10, 14, 15, 16, 18, 22, 26, 35, 37, 41, 44, 45, 52, 53, 56, 59
 neg slope, dominant new years: 7, 19, 24, 25, 31, 46, 50, 51, 57, 58,
 partial coverage of months 0-33: 8, 23, 32, 13, 17, 54,30, 40, 43, 33, 29, 27, 49, 39, 48, 34, 36
-
-
---> also, look at smoothing effect of plot by week, month, quarter
 
 --> what about shop 40 (untested, alive 420 to 750), which seems like an online shop, but doesn't have the same spiky behavior as other online shops
 
