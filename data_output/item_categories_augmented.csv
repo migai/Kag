@@ -1,85 +1,85 @@
 item_category_name,item_category_id,en_cat_name,item_category1,item_category2,item_category3,item_category4,item_cat_tested
-PC - Гарнитуры/Наушники,0,PC - Headsets / Headphones,Audio,PC,Accessories,PC,True
-Аксессуары - PS2,1,Accessories - PS2,Accessories,PlayStation,Accessories,PlayStation,False
-Аксессуары - PS3,2,Accessories - PS3,Accessories,PlayStation,Accessories,PlayStation,True
-Аксессуары - PS4,3,Accessories - PS4,Accessories,PlayStation,Accessories,PlayStation,True
-Аксессуары - PSP,4,Accessories - PSP,Accessories,PlayStation,Accessories,PlayStation,False
-Аксессуары - PSVita,5,Accessories - PSVita,Accessories,PlayStation,Accessories,PlayStation,True
-Аксессуары - XBOX 360,6,Accessories - XBOX 360,Accessories,Xbox,Accessories,Xbox,True
-Аксессуары - XBOX ONE,7,Accessories - XBOX ONE,Accessories,Xbox,Accessories,Xbox,True
-Билеты (Цифра),8,Tickets (digits),Tickets,Any,Tickets,Any,False
-Доставка товара,9,Delivery of goods,Shipping,Any,Shipping,Any,True
-Игровые консоли - PS2,10,Game consoles - PS2,Consoles,PlayStation,Consoles,PlayStation,False
-Игровые консоли - PS3,11,Game consoles - PS3,Consoles,PlayStation,Consoles,PlayStation,True
-Игровые консоли - PS4,12,Game consoles - PS4,Consoles,PlayStation,Consoles,PlayStation,True
-Игровые консоли - PSP,13,Game consoles - PSP,Consoles,PlayStation,Consoles,PlayStation,False
-Игровые консоли - PSVita,14,Game consoles - PSVita,Consoles,PlayStation,Consoles,PlayStation,False
-Игровые консоли - XBOX 360,15,Game consoles - XBOX 360,Consoles,Xbox,Consoles,Xbox,True
-Игровые консоли - XBOX ONE,16,Game consoles - XBOX ONE,Consoles,Xbox,Consoles,Xbox,True
-Игровые консоли - Прочие,17,Game consoles - Other,Consoles,Other,Consoles,Any,False
-Игры - PS2,18,Games - PS2,Games,PlayStation,Games,PlayStation,False
-Игры - PS3,19,Games - PS3,Games,PlayStation,Games,PlayStation,True
-Игры - PS4,20,Games - PS4,Games,PlayStation,Games,PlayStation,True
-Игры - PSP,21,Games - PSP,Games,PlayStation,Games,PlayStation,True
-Игры - PSVita,22,Games - PSVita,Games,PlayStation,Games,PlayStation,True
-Игры - XBOX 360,23,Games - XBOX 360,Games,Xbox,Games,Xbox,True
-Игры - XBOX ONE,24,Games - XBOX ONE,Games,Xbox,Games,Xbox,True
-Игры - Аксессуары для игр,25,Games - Accessories for games,Games,Any,Games,Any,True
-Игры Android - Цифра,26,Games Android - Digital,Games,Phone,Games,PC,True
-Игры MAC - Цифра,27,Games MAC - Digital,Games,PC,Games,PC,True
-Игры PC - Дополнительные издания,28,Games PC - Additional publications,Games,PC,Games,PC,True
-Игры PC - Коллекционные издания,29,Games PC - Collector's Edition,Games,PC,Games,PC,True
-Игры PC - Стандартные издания,30,Games PC - Standard Edition,Games,PC,Games,PC,True
-Игры PC - Цифра,31,Games PC - Digital,Games,PC,Games,PC,True
-"Карты оплаты (Кино, Музыка, Игры)",32,"Payment card (Movies, Music, Games)",Debit_Cards,Any,Debit_Cards,Any,False
-Карты оплаты - Live!,33,Payment cards - Live!,Debit_Cards,Xbox,Debit_Cards,Xbox,True
-Карты оплаты - Live! (Цифра),34,Payment cards - Live! (Numeral),Debit_Cards,Xbox,Debit_Cards,Xbox,True
-Карты оплаты - PSN,35,Payment cards - PSN,Debit_Cards,PlayStation,Debit_Cards,PlayStation,True
-Карты оплаты - Windows (Цифра),36,Payment card - Windows (figure),Debit_Cards,PC,Debit_Cards,PC,True
-Кино - Blu-Ray,37,Movie - Blu-Ray,Movies,Movies,Movies,Movies,True
-Кино - Blu-Ray 3D,38,Movie - Blu-Ray 3D,Movies,Movies,Movies,Movies,True
-Кино - Blu-Ray 4K,39,Movie - Blu-Ray 4K,Movies,Movies,Movies,Movies,False
-Кино - DVD,40,Movie - DVD,Movies,Movies,Movies,Movies,True
-Кино - Коллекционное,41,Cinema - Collector,Movies,Movies,Movies,Movies,True
-"Книги - Артбуки, энциклопедии",42,"Books - artbook, encyclopedia",Books,Books,Books,Books,True
-Книги - Аудиокниги,43,Books - Audiobooks,Books,Books,Books,Books,True
-Книги - Аудиокниги (Цифра),44,Books - Audiobooks (figure),Books,Books,Books,Books,True
-Книги - Аудиокниги 1С,45,Books - Audiobooks 1C,Books,Books,Books,Books,True
-Книги - Бизнес литература,46,Books - Business Books,Books,Books,Books,Books,False
-"Книги - Комиксы, манга",47,"Books - Comics, Manga",Books,Books,Books,Books,True
-Книги - Компьютерная литература,48,Books - Computer Books,Books,PC,Books,PC,False
-Книги - Методические материалы 1С,49,Books - Methodical materials 1C,Books,Books,Books,Books,True
-Книги - Открытки,50,Books - Postcards,Books,Books,Books,Books,False
-Книги - Познавательная литература,51,Books - Informative literature,Books,Books,Books,Books,False
-Книги - Путеводители,52,Books - Travel Guides,Books,Books,Books,Books,False
-Книги - Художественная литература,53,Books - Fiction,Books,Books,Books,Books,False
-Книги - Цифра,54,Books - Digital,Books,PC,Books,PC,True
-Музыка - CD локального производства,55,Music - CD of local production,Music,Music,Music,Music,True
-Музыка - CD фирменного производства,56,Music - CD production firm,Music,Music,Music,Music,True
-Музыка - MP3,57,Music - MP3,Music,Music,Music,Music,True
-Музыка - Винил,58,Music - Vinyl,Music,Music,Music,Music,True
-Музыка - Музыкальное видео,59,Music - Music video,Music,Music,Music,Music,False
-Музыка - Подарочные издания,60,Music - Gift Edition,Music,Music,Music,Music,True
-Подарки - Атрибутика,61,Gifts - Attributes,Gifts,Gifts,Gifts,Gifts,True
-"Подарки - Гаджеты, роботы, спорт",62,"Gifts - gadgets, robots, sports",Gifts,Gifts,Gifts,Gifts,True
-Подарки - Мягкие игрушки,63,Gifts - Soft Toys,Gifts,Gifts,Gifts,Gifts,True
-Подарки - Настольные игры,64,Gifts - Board Games,Gifts,Gifts,Gifts,Gifts,True
-Подарки - Настольные игры (компактные),65,Gifts - Games (compact),Gifts,Gifts,Gifts,Gifts,True
-"Подарки - Открытки, наклейки",66,"Gifts - Cards, Stickers",Gifts,Gifts,Gifts,Gifts,False
-Подарки - Развитие,67,Gifts - Development,Gifts,Gifts,Gifts,Gifts,True
-"Подарки - Сертификаты, услуги",68,"Gifts - certificates, services",Gifts,Gifts,Gifts,Gifts,False
-Подарки - Сувениры,69,Gifts - Souvenirs,Gifts,Gifts,Gifts,Gifts,True
-Подарки - Сувениры (в навеску),70,Gifts - Souvenirs (weighed in),Gifts,Gifts,Gifts,Gifts,True
-"Подарки - Сумки, Альбомы, Коврики д/мыши",71,"Gifts - Bags, Albums, Mats d / mouse",Gifts,Gifts,Gifts,Gifts,True
-Подарки - Фигурки,72,Gifts - Figures,Gifts,Gifts,Gifts,Gifts,True
-Программы - 1С:Предприятие 8,73,Program - 1C: Enterprise 8,Software,PC,Software,PC,True
-Программы - MAC (Цифра),74,Program - MAC (figure),Software,PC,Software,PC,True
-Программы - Для дома и офиса,75,Program - For home and office,Software,PC,Software,PC,True
-Программы - Для дома и офиса (Цифра),76,Program - Home & Office (Digital),Software,PC,Software,PC,True
-Программы - Обучающие,77,Program - Educational,Software,PC,Software,PC,True
-Программы - Обучающие (Цифра),78,Programs - Educational (figure),Software,PC,Software,PC,True
-Служебные,79,System Tools,Accessories,Any,Accessories,Any,True
-Служебные - Билеты,80,Utilities - Tickets,Tickets,Any,Tickets,Any,False
-Чистые носители (шпиль),81,Net carriers (spire),Internet,Any,Internet,Any,False
-Чистые носители (штучные),82,Net carriers (piece),Internet,Any,Internet,Any,False
-Элементы питания,83,batteries,Accessories,Any,Accessories,Any,True
+PC - Гарнитуры/Наушники,0,PC - Headsets / Headphones,Audio,PC,Accessories,PC,TRUE
+Аксессуары - PS2,1,Accessories - PS2,Accessories,PlayStation,Accessories,PlayStation,FALSE
+Аксессуары - PS3,2,Accessories - PS3,Accessories,PlayStation,Accessories,PlayStation,TRUE
+Аксессуары - PS4,3,Accessories - PS4,Accessories,PlayStation,Accessories,PlayStation,TRUE
+Аксессуары - PSP,4,Accessories - PSP,Accessories,PlayStation,Accessories,PlayStation,FALSE
+Аксессуары - PSVita,5,Accessories - PSVita,Accessories,PlayStation,Accessories,PlayStation,TRUE
+Аксессуары - XBOX 360,6,Accessories - XBOX 360,Accessories,Xbox,Accessories,Xbox,TRUE
+Аксессуары - XBOX ONE,7,Accessories - XBOX ONE,Accessories,Xbox,Accessories,Xbox,TRUE
+Билеты (Цифра),8,Tickets (digits),Tickets,Any,Tickets,Any,FALSE
+Доставка товара,9,Delivery of goods,Shipping,Any,Shipping,Any,TRUE
+Игровые консоли - PS2,10,Game consoles - PS2,Consoles,PlayStation,Consoles,PlayStation,FALSE
+Игровые консоли - PS3,11,Game consoles - PS3,Consoles,PlayStation,Consoles,PlayStation,TRUE
+Игровые консоли - PS4,12,Game consoles - PS4,Consoles,PlayStation,Consoles,PlayStation,TRUE
+Игровые консоли - PSP,13,Game consoles - PSP,Consoles,PlayStation,Consoles,PlayStation,FALSE
+Игровые консоли - PSVita,14,Game consoles - PSVita,Consoles,PlayStation,Consoles,PlayStation,FALSE
+Игровые консоли - XBOX 360,15,Game consoles - XBOX 360,Consoles,Xbox,Consoles,Xbox,TRUE
+Игровые консоли - XBOX ONE,16,Game consoles - XBOX ONE,Consoles,Xbox,Consoles,Xbox,TRUE
+Игровые консоли - Прочие,17,Game consoles - Other,Consoles,Other,Consoles,Any,FALSE
+Игры - PS2,18,Games - PS2,Games,PlayStation,Games,PlayStation,FALSE
+Игры - PS3,19,Games - PS3,Games,PlayStation,Games,PlayStation,TRUE
+Игры - PS4,20,Games - PS4,Games,PlayStation,Games,PlayStation,TRUE
+Игры - PSP,21,Games - PSP,Games,PlayStation,Games,PlayStation,TRUE
+Игры - PSVita,22,Games - PSVita,Games,PlayStation,Games,PlayStation,TRUE
+Игры - XBOX 360,23,Games - XBOX 360,Games,Xbox,Games,Xbox,TRUE
+Игры - XBOX ONE,24,Games - XBOX ONE,Games,Xbox,Games,Xbox,TRUE
+Игры - Аксессуары для игр,25,Games - Accessories for games,Games,Any,Games,Any,TRUE
+Игры Android - Цифра,26,Games Android - Digital,Games,Phone,Games,PC,TRUE
+Игры MAC - Цифра,27,Games MAC - Digital,Games,PC,Games,PC,TRUE
+Игры PC - Дополнительные издания,28,Games PC - Additional publications,Games,PC,Games,PC,TRUE
+Игры PC - Коллекционные издания,29,Games PC - Collector's Edition,Games,PC,Games,PC,TRUE
+Игры PC - Стандартные издания,30,Games PC - Standard Edition,Games,PC,Games,PC,TRUE
+Игры PC - Цифра,31,Games PC - Digital,Games,PC,Games,PC,TRUE
+"Карты оплаты (Кино, Музыка, Игры)",32,"Payment card (Movies, Music, Games)",Debit_Cards,Any,Debit_Cards,Any,FALSE
+Карты оплаты - Live!,33,Payment cards - Live!,Debit_Cards,Xbox,Debit_Cards,Xbox,TRUE
+Карты оплаты - Live! (Цифра),34,Payment cards - Live! (Numeral),Debit_Cards,Xbox,Debit_Cards,Xbox,TRUE
+Карты оплаты - PSN,35,Payment cards - PSN,Debit_Cards,PlayStation,Debit_Cards,PlayStation,TRUE
+Карты оплаты - Windows (Цифра),36,Payment card - Windows (figure),Debit_Cards,PC,Debit_Cards,PC,TRUE
+Кино - Blu-Ray,37,Movie - Blu-Ray,Movies,Movies,Movies,Movies,TRUE
+Кино - Blu-Ray 3D,38,Movie - Blu-Ray 3D,Movies,Movies,Movies,Movies,TRUE
+Кино - Blu-Ray 4K,39,Movie - Blu-Ray 4K,Movies,Movies,Movies,Movies,FALSE
+Кино - DVD,40,Movie - DVD,Movies,Movies,Movies,Movies,TRUE
+Кино - Коллекционное,41,Cinema - Collector,Movies,Movies,Movies,Movies,TRUE
+"Книги - Артбуки, энциклопедии",42,"Books - artbook, encyclopedia",Books,Books,Books,Books,TRUE
+Книги - Аудиокниги,43,Books - Audiobooks,Books,Books,Books,Books,TRUE
+Книги - Аудиокниги (Цифра),44,Books - Audiobooks (figure),Books,Books,Books,Books,TRUE
+Книги - Аудиокниги 1С,45,Books - Audiobooks 1C,Books,Books,Books,Books,TRUE
+Книги - Бизнес литература,46,Books - Business Books,Books,Books,Books,Books,FALSE
+"Книги - Комиксы, манга",47,"Books - Comics, Manga",Books,Books,Books,Books,TRUE
+Книги - Компьютерная литература,48,Books - Computer Books,Books,PC,Books,PC,FALSE
+Книги - Методические материалы 1С,49,Books - Methodical materials 1C,Books,Books,Books,Books,TRUE
+Книги - Открытки,50,Books - Postcards,Books,Books,Books,Books,FALSE
+Книги - Познавательная литература,51,Books - Informative literature,Books,Books,Books,Books,FALSE
+Книги - Путеводители,52,Books - Travel Guides,Books,Books,Books,Books,FALSE
+Книги - Художественная литература,53,Books - Fiction,Books,Books,Books,Books,FALSE
+Книги - Цифра,54,Books - Digital,Books,PC,Books,PC,TRUE
+Музыка - CD локального производства,55,Music - CD of local production,Music,Music,Music,Music,TRUE
+Музыка - CD фирменного производства,56,Music - CD production firm,Music,Music,Music,Music,TRUE
+Музыка - MP3,57,Music - MP3,Music,Music,Music,Music,TRUE
+Музыка - Винил,58,Music - Vinyl,Music,Music,Music,Music,TRUE
+Музыка - Музыкальное видео,59,Music - Music video,Music,Music,Music,Music,FALSE
+Музыка - Подарочные издания,60,Music - Gift Edition,Music,Music,Music,Music,TRUE
+Подарки - Атрибутика,61,Gifts - Attributes,Gifts,Gifts,Gifts,Gifts,TRUE
+"Подарки - Гаджеты, роботы, спорт",62,"Gifts - gadgets, robots, sports",Gifts,Gifts,Gifts,Gifts,TRUE
+Подарки - Мягкие игрушки,63,Gifts - Soft Toys,Gifts,Gifts,Gifts,Gifts,TRUE
+Подарки - Настольные игры,64,Gifts - Board Games,Gifts,Gifts,Gifts,Gifts,TRUE
+Подарки - Настольные игры (компактные),65,Gifts - Games (compact),Gifts,Gifts,Gifts,Gifts,TRUE
+"Подарки - Открытки, наклейки",66,"Gifts - Cards, Stickers",Gifts,Gifts,Gifts,Gifts,FALSE
+Подарки - Развитие,67,Gifts - Development,Gifts,Gifts,Gifts,Gifts,TRUE
+"Подарки - Сертификаты, услуги",68,"Gifts - certificates, services",Gifts,Gifts,Gifts,Gifts,FALSE
+Подарки - Сувениры,69,Gifts - Souvenirs,Gifts,Gifts,Gifts,Gifts,TRUE
+Подарки - Сувениры (в навеску),70,Gifts - Souvenirs (weighed in),Gifts,Gifts,Gifts,Gifts,TRUE
+"Подарки - Сумки, Альбомы, Коврики д/мыши",71,"Gifts - Bags, Albums, Mats d / mouse",Gifts,Gifts,Gifts,Gifts,TRUE
+Подарки - Фигурки,72,Gifts - Figures,Gifts,Gifts,Gifts,Gifts,TRUE
+Программы - 1С:Предприятие 8,73,Program - 1C: Enterprise 8,Software,PC,Software,PC,TRUE
+Программы - MAC (Цифра),74,Program - MAC (figure),Software,PC,Software,PC,TRUE
+Программы - Для дома и офиса,75,Program - For home and office,Software,PC,Software,PC,TRUE
+Программы - Для дома и офиса (Цифра),76,Program - Home & Office (Digital),Software,PC,Software,PC,TRUE
+Программы - Обучающие,77,Program - Educational,Software,PC,Software,PC,TRUE
+Программы - Обучающие (Цифра),78,Programs - Educational (figure),Software,PC,Software,PC,TRUE
+Служебные,79,System Tools,Accessories,Any,Accessories,Any,TRUE
+Служебные - Билеты,80,Utilities - Tickets,Tickets,Any,Tickets,Any,FALSE
+Чистые носители (шпиль),81,Net carriers (spire),Internet,Any,Internet,Any,FALSE
+Чистые носители (штучные),82,Net carriers (piece),Internet,Any,Internet,Any,FALSE
+Элементы питания,83,batteries,Accessories,Any,Accessories,Any,TRUE

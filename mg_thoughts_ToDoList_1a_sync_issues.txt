@@ -6,17 +6,33 @@ Definitely to do:
 		20949	corporate package white shirt 1c interest 34 42 45 m	True	71	Gifts - Bags, Albums, Mats d / mouse	
 	3) multiply sales of shop 36
 		36 is open 1019 to 1033 = 15 days, in Oct. 2015... multiply by 31/15 all sales from this store  (then, can scale all months compared to days in Nov 2015, including for this store)
-	4) Delete these shops from sales_train: 
+	4) Delete these shops from sales_train: (to do in modeling IPynb)
 		[8, 13, 23, 32, 33, 40]
 
 	5) New Shop Grouping Feature (manual column added, based on correlations & clustering)
 		a) 57 and 58 strong group
-		b) 55 alone
-		c) 12, 22, 42
-		d) 9, 20
-		e) ?? find groups for 54, 27, 51, 30, (17, 43, 29)
-		f) group or merge 50 and 51?
-		g) combine remainder with other categorizations I've done
+		z) 55 alone
+		b) 12, 22, 42
+		o) 9, 20
+		) ?? find groups for 54, 27, 51, 30, (17, 43, 29)
+		c) group or merge 50 and 51?
+		) group early-closing shops by end quarter?
+		e) 8(80), 23(110), 32(180) very early close
+		f) 13(580), 30(760), 33(600-810), 40(450-750), 43(750), 54(850) close midway
+		f) 27(920), c51 (1000) close just before end
+		) group by federal districts
+		M moscow/central
+		S south
+		U ural
+		N eastern
+		I siberian
+		W northwest
+		V volga
+		) combine remainder with other categorizations I've done
+		# looks like it could be safe to delete these shops from sales_train: 
+		[8, 13, 23, 32, 33, 40]
+        # should probably delete categories 8, 80 (= 'tickets') and probably 81,82 (= 'net carriers')
+		
 		
 	6) New item cluster codes
 

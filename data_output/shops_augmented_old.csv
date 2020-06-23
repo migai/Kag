@@ -1,0 +1,61 @@
+shop_name,shop_id,en_shop_name,shop_city_population,shop_tested,shop_type,shop_type_enc,shop_city,shop_city_enc,shop_federal_district,shop_federal_district_enc,s_type_broad,s_type_broad_enc,fd_popdens,fd_popdens_enc,fd_gdp,fd_gdp_enc
+"!Якутск Орджоникидзе, 56 фран",0,"! Yakutsk Ordzhonikidze, 56 Franc",235600,FALSE,Shop,20,Yakutsk,54,Eastern,16,Shop,10,Remote,5,Intermediate,43
+"!Якутск ТЦ ""Центральный"" фран",1,"! Yakutsk TC ""Central"" Franc",235600,FALSE,Mall,50,Yakutsk,54,Eastern,16,Mall,60,Remote,5,Intermediate,43
+"Адыгея ТЦ ""Мега""",2,"Adygea TC ""Mega""",144055,TRUE,Mega,30,Adygea,10,South,32,Mall,60,Intermediate,31,Low,25
+"Балашиха ТРК ""Октябрь-Киномир""",3,"Balashikha TRC ""October-Kinomir""",150103,TRUE,Mall,50,Balashikha,8,Central,56,Mall,60,Populous,57,Intermediate,43
+"Волжский ТЦ ""Волга Молл""",4,"Volzhsky mall ""Volga Mall""",1011417,TRUE,Mall,50,Volgograd,14,South,32,Mall,60,Intermediate,31,Low,25
+"Вологда ТРЦ ""Мармелад""",5,"Vologda SEC ""Marmalade""",314900,TRUE,SEC,40,Vologda,12,Northwestern,8,Mall,60,Remote,5,Intermediate,43
+"Воронеж (Плехановская, 13)",6,"Voronezh (Plekhanovskaya, 13)",848752,TRUE,Shop,20,Voronezh,52,Central,56,Shop,10,Populous,57,Intermediate,43
+"Воронеж ТРЦ ""Максимир""",7,"Voronezh SEC ""Maksimir""",848752,TRUE,SEC,40,Voronezh,52,Central,56,Mall,60,Populous,57,Intermediate,43
+"Воронеж ТРЦ Сити-Парк ""Град""",8,"Voronezh shopping center City Park ""Castle""",848752,FALSE,Mall,50,Voronezh,52,Central,56,Mall,60,Populous,57,Intermediate,43
+Выездная Торговля,9,Itinerant trade,100000,FALSE,Itinerant,0,None,50,None,0,Online,35,Online,25,High,60
+Жуковский ул. Чкалова 39м?,10,Zhukovsky Street. Chkalov 39m?,105000,TRUE,Shop,20,Zhukovsky,6,Central,56,Shop,10,Populous,57,Intermediate,43
+Жуковский ул. Чкалова 39м²,11,Zhukovsky Street. Chkalov 39m²,105000,FALSE,Shop,20,Zhukovsky,6,Central,56,Shop,10,Populous,57,Intermediate,43
+Интернет-магазин ЧС,12,Shop Online Emergencies,20000000,TRUE,Online,10,None,50,None,0,Online,35,Online,25,High,60
+"Казань ТЦ ""Бехетле""",13,"Kazan shopping center ""Bahetle""",1104738,FALSE,Mall,50,Kazan,22,Volga,48,Mall,60,Intermediate,31,Low,25
+"Казань ТЦ ""ПаркХаус"" II",14,"Kazan shopping mall of ""Parkhouse"" II of",1104738,TRUE,Mall,50,Kazan,22,Volga,48,Mall,60,Intermediate,31,Low,25
+"Калуга ТРЦ ""XXI век""",15,"Kaluga SEC ""XXI Century""",338978,TRUE,SEC,40,Kaluga,26,Central,56,Mall,60,Populous,57,Intermediate,43
+"Коломна ТЦ ""Рио""",16,"Kolomna shopping center ""Rio""",147690,TRUE,Mall,50,Kolomna,20,Central,56,Mall,60,Populous,57,Intermediate,43
+"Красноярск ТЦ ""Взлетка Плаза""",17,"Krasnoyarsk TC ""Vzletka Plaza""",927200,FALSE,Mall,50,Krasnoyarsk,34,Siberian,40,Mall,60,Remote,5,Low,25
+"Красноярск ТЦ ""Июнь""",18,"Krasnoyarsk SC ""June""",927200,TRUE,Mall,50,Krasnoyarsk,34,Siberian,40,Mall,60,Remote,5,Low,25
+"Курск ТЦ ""Пушкинский""",19,"Kursk TC ""Pushkin""",409431,TRUE,Mall,50,Kursk,28,Central,56,Mall,60,Populous,57,Intermediate,43
+"Москва ""Распродажа""",20,"Moscow ""Sale""",20000000,FALSE,Online,10,None,50,None,0,Online,35,Online,25,High,60
+"Москва МТРЦ ""Афи Молл""",21,"Moscow MTRTS ""Afi Mall""",10381222,TRUE,Mall,50,Moscow,56,Central,56,Mall,60,Populous,57,Intermediate,43
+Москва Магазин С21,22,Moscow C21 Store,10381222,TRUE,Shop,20,Moscow,56,Central,56,Shop,10,Populous,57,Intermediate,43
+"Москва ТК ""Буденовский"" (пав.А2)",23,"Moscow TK ""Budenovsky"" (pav.A2)",10381222,FALSE,Mall,50,Moscow,56,Central,56,Mall,60,Populous,57,Intermediate,43
+"Москва ТК ""Буденовский"" (пав.К7)",24,"Moscow TK ""Budenovsky"" (pav.K7)",10381222,TRUE,Mall,50,Moscow,56,Central,56,Mall,60,Populous,57,Intermediate,43
+"Москва ТРК ""Атриум""",25,"Moscow SEC ""Atrium""",10381222,TRUE,SEC,40,Moscow,56,Central,56,Mall,60,Populous,57,Intermediate,43
+"Москва ТЦ ""Ареал"" (Беляево)",26,"Moscow shopping mall ""area"" (Belyaevo)",10381222,TRUE,Mall,50,Moscow,56,Central,56,Mall,60,Populous,57,Intermediate,43
+"Москва ТЦ ""МЕГА Белая Дача II""",27,"Moscow shopping center ""MEGA Belaya Dacha II""",10381222,FALSE,Mega,30,Moscow,56,Central,56,Mall,60,Populous,57,Intermediate,43
+"Москва ТЦ ""МЕГА Теплый Стан"" II",28,"Moscow shopping center ""MEGA Teply Stan"" II of",10381222,TRUE,Mega,30,Moscow,56,Central,56,Mall,60,Populous,57,Intermediate,43
+"Москва ТЦ ""Новый век"" (Новокосино)",29,"Moscow shopping center ""New Age"" (Novokosino)",10381222,FALSE,Mall,50,Moscow,56,Central,56,Mall,60,Populous,57,Intermediate,43
+"Москва ТЦ ""Перловский""",30,"Moscow shopping center ""Perlovskiy""",160542,FALSE,SEC,40,Mytishchi,0,Central,56,Mall,60,Populous,57,Intermediate,43
+"Москва ТЦ ""Семеновский""",31,"Moscow shopping center ""Semyonov""",10381222,TRUE,SEC,40,Moscow,56,Central,56,Mall,60,Populous,57,Intermediate,43
+"Москва ТЦ ""Серебряный Дом""",32,"Moscow shopping center ""Silver House""",10381222,FALSE,SEC,40,Moscow,56,Central,56,Mall,60,Populous,57,Intermediate,43
+"Мытищи ТРК ""XL-3""",33,"Mytishchi TRK ""XL-3""",160542,FALSE,SEC,40,Mytishchi,0,Central,56,Mall,60,Populous,57,Intermediate,43
+"Н.Новгород ТРЦ ""РИО""",34,"Nizhny Novgorod SEC ""RIO""",1284164,TRUE,SEC,40,Nizhny Novgorod,42,Volga,48,Mall,60,Intermediate,31,Low,25
+"Н.Новгород ТРЦ ""Фантастика""",35,"Nizhny Novgorod SEC ""Fantasy""",1284164,TRUE,SEC,40,Nizhny Novgorod,42,Volga,48,Mall,60,Intermediate,31,Low,25
+"Новосибирск ТРЦ ""Галерея Новосибирск""",36,"Novosibirsk SEC ""Gallery Novosibirsk""",1419007,TRUE,SEC,40,Novosibirsk,38,Siberian,40,Mall,60,Remote,5,Low,25
+"Новосибирск ТЦ ""Мега""",37,"Novosibirsk shopping center ""Mega""",1419007,TRUE,Mega,30,Novosibirsk,38,Siberian,40,Mall,60,Remote,5,Low,25
+"Омск ТЦ ""Мега""",38,"Omsk TC ""Mega""",1129281,TRUE,Mega,30,Omsk,18,Siberian,40,Mall,60,Remote,5,Low,25
+"РостовНаДону ТРК ""Мегацентр Горизонт""",39,"RostovNaDonu TRC ""Megacenter Horizon""",1074482,TRUE,SEC,40,Rostov-on-Don,40,South,32,Mall,60,Intermediate,31,Low,25
+"РостовНаДону ТРК ""Мегацентр Горизонт"" Островной",40,"RostovNaDonu TRC ""Megacenter Horizon"" Island",20000000,FALSE,Online,10,None,50,None,0,Online,35,Online,25,High,60
+"РостовНаДону ТЦ ""Мега""",41,"RostovNaDonu TC ""Mega""",1074482,TRUE,Mega,30,Rostov-on-Don,40,South,32,Mall,60,Intermediate,31,Low,25
+"СПб ТК ""Невский Центр""",42,"St. Petersburg TK ""Nevsky Center""",5028000,TRUE,Mall,50,St. Petersburg,36,Northwestern,8,Mall,60,Remote,5,Intermediate,43
+"СПб ТК ""Сенная""",43,"St. Petersburg TK ""Sennaya""",5028000,FALSE,SEC,40,St. Petersburg,36,Northwestern,8,Mall,60,Remote,5,Intermediate,43
+"Самара ТЦ ""Мелодия""",44,"Samara mall ""Melody""",1134730,TRUE,Mall,50,Samara,44,Volga,48,Mall,60,Intermediate,31,Low,25
+"Самара ТЦ ""ПаркХаус""",45,"Samara mall of ""Parkhouse""",1134730,TRUE,Mall,50,Samara,44,Volga,48,Mall,60,Intermediate,31,Low,25
+"Сергиев Посад ТЦ ""7Я""",46,"Sergiev Posad TC ""7Ya""",109252,TRUE,SEC,40,Sergiyev Posad,32,Central,56,Mall,60,Populous,57,Intermediate,43
+"Сургут ТРЦ ""Сити Молл""",47,"Surgut SEC ""City Mall""",300367,TRUE,SEC,40,Surgut,24,Ural,24,Mall,60,Remote,5,High,60
+"Томск ТРЦ ""Изумрудный Город""",48,"Tomsk SEC ""Emerald City""",485519,TRUE,SEC,40,Tomsk,4,Siberian,40,Mall,60,Remote,5,Low,25
+"Тюмень ТРЦ ""Кристалл""",49,"Tyumen SEC ""Crystal""",519119,TRUE,SEC,40,Tyumen,48,Ural,24,Mall,60,Remote,5,High,60
+"Тюмень ТЦ ""Гудвин""",50,"Tyumen SC ""Goodwin""",519119,TRUE,Mall,50,Tyumen,48,Ural,24,Mall,60,Remote,5,High,60
+"Тюмень ТЦ ""Зеленый Берег""",51,"Tyumen SC ""Green Coast""",519119,FALSE,Mall,50,Tyumen,48,Ural,24,Mall,60,Remote,5,High,60
+"Уфа ТК ""Центральный""",52,"Ufa TC ""Central""",1033338,TRUE,Mall,50,Ufa,46,Volga,48,Mall,60,Intermediate,31,Low,25
+"Уфа ТЦ ""Семья"" 2",53,"Ufa TC ""Family"" 2",1033338,TRUE,Mall,50,Ufa,46,Volga,48,Mall,60,Intermediate,31,Low,25
+"Химки ТЦ ""Мега""",54,"Khimki shopping center ""Mega""",239967,FALSE,Mega,30,Khimki,2,Central,56,Mall,60,Populous,57,Intermediate,43
+Цифровой склад 1С-Онлайн,55,Digital storage 1C-line,20000000,TRUE,Online,10,None,50,None,0,Online,35,Online,25,High,60
+"Чехов ТРЦ ""Карнавал""",56,"Czechs SEC ""Carnival""",61000,TRUE,SEC,40,Chekhov,30,Central,56,Mall,60,Populous,57,Intermediate,43
+"Якутск Орджоникидзе, 56",57,"Yakutsk Ordzhonikidze, 56",235600,TRUE,Shop,20,Yakutsk,54,Eastern,16,Shop,10,Remote,5,Intermediate,43
+"Якутск ТЦ ""Центральный""",58,"Yakutsk TC ""Central""",235600,TRUE,Mall,50,Yakutsk,54,Eastern,16,Mall,60,Remote,5,Intermediate,43
+"Ярославль ТЦ ""Альтаир""",59,"Yaroslavl shopping center ""Altair""",606730,TRUE,SEC,40,Yaroslavl,16,Central,56,Mall,60,Populous,57,Intermediate,43
