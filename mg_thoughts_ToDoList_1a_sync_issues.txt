@@ -28,9 +28,10 @@ Definitely to do:
 		I siberian
 		W northwest
 		V volga
-		) combine remainder with other categorizations I've done
 		# looks like it could be safe to delete these shops from sales_train: 
 		[8, 13, 23, 32, 33, 40]
+		
+		
         # should probably delete categories 8, 80 (= 'tickets') and probably 81,82 (= 'net carriers')
 		
 		
