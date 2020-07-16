@@ -1,0 +1,2 @@
+lr,reg,max_iter,estop,start,end,n_val_mo,seed,trR2,valR2,tr_rmse,val_rmse,best_iter,best_val_rmse,model_time,predict_time,total_time
+0.03,0.4,100,100,13,29,False,42,0.443240735262459,0.3928865084705506,0.8473627430066536,0.8066417981346259,0,1290.6268706566134,00:01:52,00:00:17,00:02:10
