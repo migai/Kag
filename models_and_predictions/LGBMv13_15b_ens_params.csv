@@ -1,0 +1,27 @@
+start_time,model_name,val_rmse,val_R2,tr_rmse,tr_R2,train_start_month,train_final_month,validate_key,total_wall_clock_time,model_fit_time,model_predict_time,boosting_type,metric,learning_rate,n_estimators,early_stopping_rounds,best_iteration_,best_score_,colsample_bytree,random_state,subsample_for_bin,num_leaves,max_depth,min_split_gain,min_child_weight,min_child_samples,silent,importance_type,reg_alpha,reg_lambda,n_jobs,subsample,subsample_freq,objective,sales_train_clip_L,sales_train_clip_H,sales_predict_clip_L,sales_predict_clip_H,eval_metric,init_score,eval_init_score,verbose,feature_name,categorical_feature,callbacks,use_robust_scaler,robust_scaler_quantiles,use_minmax_scaler,minmax_scaler_range,feature_data_type,use_cartprod_fill,cartprod_with_test_pairs,cartprod_fillna_with_0,cartprod_fill_month_begin,model_type,test_month,feature_name_,feature_importances_,shops_to_delete,item_cats_to_delete,scale_month
+Sat 17:22:29 07/18/20,LGBMv13_15b_ens,0,0,0,0,13,29,False,00:01:08,00:00:55,00:00:11,gbdt,rmse,0.05,200,20,66,656,0.4,42,200000,31,-1,0.0,0.001,20,False,split,0.0,0.0,-1,1.0,0,regression,0,20,0,20,rmse,,,True,auto,auto,,True,"(20, 80)",True,"(0, 16000)",<class 'numpy.int16'>,True,False,True,13,LGBM,34,"Index(['month', 'shop_id', 'item_id', 'shop_group', 'item_group', 'item_cluster', 'item_category_id', 'y_sales_L1', 'shop_id_x_item_id_sales_median_L1', 'shop_id_x_item_id_sales_count_L1',
+       'shop_id_x_item_id_revenue_sum_L1', 'shop_id_x_item_category_id_sales_sum_L1', 'shop_id_x_item_category_id_sales_median_L1', 'shop_id_x_item_category_id_sales_count_L1', 'shop_id_x_item_cluster_sales_sum_L1',
+       'shop_id_x_item_cluster_sales_median_L1', 'shop_id_sales_sum_L1', 'shop_id_sales_count_L1', 'item_id_sales_sum_L1', 'item_id_sales_median_L1', 'item_id_sales_count_L1', 'item_id_revenue_sum_L1',
+       'shop_group_revenue_sum_L1', 'item_category_id_sales_sum_L1', 'item_category_id_sales_count_L1', 'item_category_id_revenue_sum_L1', 'item_group_sales_sum_L1', 'item_group_revenue_sum_L1',
+       'item_cluster_sales_sum_L1', 'item_cluster_sales_count_L1', 'item_cluster_revenue_sum_L1', 'y_sales_L2', 'shop_id_x_item_id_sales_count_L2', 'shop_id_x_item_id_revenue_sum_L2',
+       'shop_id_x_item_category_id_sales_count_L2', 'shop_id_x_item_category_id_revenue_sum_L2', 'shop_id_sales_sum_L2', 'item_id_sales_sum_L2', 'item_id_sales_count_L2', 'item_id_revenue_sum_L2',
+       'item_category_id_sales_sum_L2', 'item_category_id_sales_count_L2', 'item_cluster_sales_sum_L2', 'item_cluster_sales_count_L2', 'item_cluster_revenue_sum_L2', 'y_sales_L3', 'shop_id_sales_sum_L3',
+       'item_id_sales_sum_L3', 'item_id_sales_count_L3', 'item_id_revenue_sum_L3', 'item_category_id_sales_sum_L3', 'item_category_id_sales_count_L3', 'item_cluster_sales_count_L3', 'item_id_sales_sum_L4', 'y_sales_L5',
+       'y_sales_L6', 'item_id_sales_sum_L7', 'y_sales_L8'],
+      dtype='object')","[ 90 130 304  22  21 187 113  97  33  41   9  26  14  34   4  12  23  39
+  69  39  48  26   6   8  13  11   7   4   9   4   5  42  50  21  11  13
+  17  24  21  13  18  22  10   3   8  39  17  15  10   8   5  23   4  38
+  31  34  10  25]","[9, 20]","[8, 10, 32, 59, 80, 81, 82]",week_retail_weight
+Sat 17:23:38 07/18/20,LGBMv13_15b_ens,0,0,0,0,13,29,False,00:00:53,00:00:43,00:00:08,gbdt,rmse,0.05,200,20,44,661,0.4,42,800000,31,-1,0.0,0.001,20,False,split,0.0,0.0,-1,1.0,0,regression,0,20,0,20,rmse,,,True,auto,auto,,True,"(20, 80)",True,"(0, 16000)",<class 'numpy.int16'>,True,False,True,13,LGBM,34,"Index(['month', 'shop_id', 'item_id', 'shop_group', 'item_group', 'item_cluster', 'item_category_id', 'y_sales_L1', 'shop_id_x_item_id_sales_median_L1', 'shop_id_x_item_id_sales_count_L1',
+       'shop_id_x_item_id_revenue_sum_L1', 'shop_id_x_item_category_id_sales_sum_L1', 'shop_id_x_item_category_id_sales_median_L1', 'shop_id_x_item_category_id_sales_count_L1', 'shop_id_x_item_cluster_sales_sum_L1',
+       'shop_id_x_item_cluster_sales_median_L1', 'shop_id_sales_sum_L1', 'shop_id_sales_count_L1', 'item_id_sales_sum_L1', 'item_id_sales_median_L1', 'item_id_sales_count_L1', 'item_id_revenue_sum_L1',
+       'shop_group_revenue_sum_L1', 'item_category_id_sales_sum_L1', 'item_category_id_sales_count_L1', 'item_category_id_revenue_sum_L1', 'item_group_sales_sum_L1', 'item_group_revenue_sum_L1',
+       'item_cluster_sales_sum_L1', 'item_cluster_sales_count_L1', 'item_cluster_revenue_sum_L1', 'y_sales_L2', 'shop_id_x_item_id_sales_count_L2', 'shop_id_x_item_id_revenue_sum_L2',
+       'shop_id_x_item_category_id_sales_count_L2', 'shop_id_x_item_category_id_revenue_sum_L2', 'shop_id_sales_sum_L2', 'item_id_sales_sum_L2', 'item_id_sales_count_L2', 'item_id_revenue_sum_L2',
+       'item_category_id_sales_sum_L2', 'item_category_id_sales_count_L2', 'item_cluster_sales_sum_L2', 'item_cluster_sales_count_L2', 'item_cluster_revenue_sum_L2', 'y_sales_L3', 'shop_id_sales_sum_L3',
+       'item_id_sales_sum_L3', 'item_id_sales_count_L3', 'item_id_revenue_sum_L3', 'item_category_id_sales_sum_L3', 'item_category_id_sales_count_L3', 'item_cluster_sales_count_L3', 'item_id_sales_sum_L4', 'y_sales_L5',
+       'y_sales_L6', 'item_id_sales_sum_L7', 'y_sales_L8'],
+      dtype='object')","[ 61 105 199  10  23 107  84  83  26  36   4  15   3  13   3   5  15  25
+  62  24  39  15   0   4   9   5   3   5   2   1   2  27  43   6   8   8
+  11  13   8   6  10  14   1   1   1  29  12  10  10   5   4  16   2  18
+  30  27   3   9]","[9, 20]","[8, 10, 32, 59, 80, 81, 82]",week_retail_weight
