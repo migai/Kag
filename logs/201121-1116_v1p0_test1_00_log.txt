@@ -1,0 +1,122 @@
+OrderedDict([('model',
+              OrderedDict([('features',
+                            [[[FeatureGroup(lag_month=1, group_list=['shop_id', 'item_id'], stats_dict=OrderedDict([('sales', ['sum', 'median', 'count']), ('rev', ['sum'])])),
+                               FeatureGroup(lag_month=1, group_list=['shop_id', 'item_category_id'], stats_dict=OrderedDict([('sales', ['sum', 'median', 'count']), ('rev', ['sum'])])),
+                               FeatureGroup(lag_month=1, group_list=['shop_id', 'item_cluster'], stats_dict=OrderedDict([('sales', ['sum', 'median'])])),
+                               FeatureGroup(lag_month=1, group_list=['shop_id'], stats_dict=OrderedDict([('sales', ['sum', 'count'])])),
+                               FeatureGroup(lag_month=1, group_list=['item_id'], stats_dict=OrderedDict([('sales', ['sum', 'median', 'count']), ('rev', ['sum'])])),
+                               FeatureGroup(lag_month=1, group_list=['shop_group'], stats_dict=OrderedDict([('rev', ['sum'])])),
+                               FeatureGroup(lag_month=1, group_list=['item_category_id'], stats_dict=OrderedDict([('sales', ['sum', 'count']), ('rev', ['sum'])])),
+                               FeatureGroup(lag_month=1, group_list=['item_group'], stats_dict=OrderedDict([('sales', ['sum']), ('rev', ['sum'])])),
+                               FeatureGroup(lag_month=1, group_list=['item_cluster'], stats_dict=OrderedDict([('sales', ['sum', 'count']), ('rev', ['sum'])])),
+                               FeatureGroup(lag_month=2, group_list=['shop_id', 'item_id'], stats_dict=OrderedDict([('sales', ['sum', 'count']), ('rev', ['sum'])])),
+                               FeatureGroup(lag_month=2, group_list=['shop_id', 'item_category_id'], stats_dict=OrderedDict([('sales', ['count']), ('rev', ['sum'])])),
+                               FeatureGroup(lag_month=2, group_list=['shop_id'], stats_dict=OrderedDict([('sales', ['sum'])])),
+                               FeatureGroup(lag_month=2, group_list=['item_id'], stats_dict=OrderedDict([('sales', ['sum', 'count']), ('rev', ['sum'])])),
+                               FeatureGroup(lag_month=2, group_list=['item_category_id'], stats_dict=OrderedDict([('sales', ['sum', 'count'])])),
+                               FeatureGroup(lag_month=2, group_list=['item_cluster'], stats_dict=OrderedDict([('sales', ['sum', 'count']), ('rev', ['sum'])])),
+                               FeatureGroup(lag_month=3, group_list=['shop_id', 'item_id'], stats_dict=OrderedDict([('sales', ['sum'])])),
+                               FeatureGroup(lag_month=3, group_list=['shop_id'], stats_dict=OrderedDict([('sales', ['sum'])])),
+                               FeatureGroup(lag_month=3, group_list=['item_id'], stats_dict=OrderedDict([('sales', ['sum', 'count']), ('rev', ['sum'])])),
+                               FeatureGroup(lag_month=3, group_list=['item_category_id'], stats_dict=OrderedDict([('sales', ['sum', 'count'])])),
+                               FeatureGroup(lag_month=3, group_list=['item_cluster'], stats_dict=OrderedDict([('sales', ['count'])])),
+                               FeatureGroup(lag_month=4, group_list=['item_id'], stats_dict=OrderedDict([('sales', ['sum'])])),
+                               FeatureGroup(lag_month=5, group_list=['shop_id', 'item_id'], stats_dict=OrderedDict([('sales', ['sum'])])),
+                               FeatureGroup(lag_month=6, group_list=['shop_id', 'item_id'], stats_dict=OrderedDict([('sales', ['sum'])])),
+                               FeatureGroup(lag_month=6, group_list=['item_id'], stats_dict=OrderedDict([('sales', ['sum'])])),
+                               FeatureGroup(lag_month=8, group_list=['shop_id', 'item_id'], stats_dict=OrderedDict([('sales', ['sum'])]))]]]),
+                           ('model_type', [['LGBM']])])),
+             ('eda',
+              OrderedDict([('del_shops', [[[9, 20]]]),
+                           ('del_item_cats', [[[8, 10, 32, 59, 80, 81, 82]]]),
+                           ('scale_sales', [['week_retail_weight']])])),
+             ('data',
+              OrderedDict([('cp_fillna0', [[True]]),
+                           ('cp_first_mo', [[13]]),
+                           ('cp_test_pairs', [[False]]),
+                           ('clip_train', [[(-600, 600)]]),
+                           ('feat_dtype', [[<class 'numpy.int16'>]])])),
+             ('tvt',
+              OrderedDict([('tr_start_mo', [[13]]),
+                           ('tr_final_mo', [[29]]),
+                           ('val_months', [[999]]),
+                           ('use_categorical', [[True]])])),
+             ('lgbm_setup',
+              OrderedDict([('boosting_type', 'gbdt'),
+                           ('metric', [['rmse']]),
+                           ('learning_rate', [[0.05]]),
+                           ('n_estimators', [[200]]),
+                           ('colsample_bytree', [[0.4]]),
+                           ('random_state', [[42]]),
+                           ('subsample_for_bin', [[200000, 800000]]),
+                           ('num_leaves', [[31]]),
+                           ('max_depth', [[-1]]),
+                           ('min_split_gain', [[0.0]]),
+                           ('min_child_weight', [[0.001]]),
+                           ('min_child_samples', [[20]]),
+                           ('silent', [[False]]),
+                           ('importance_type', [['split']]),
+                           ('reg_alpha', [[0.0]]),
+                           ('reg_lambda', [[0.0]]),
+                           ('n_jobs', -1),
+                           ('subsample', 1.0),
+                           ('subsample_freq', 0),
+                           ('objective', 'regression')])),
+             ('lgbm_fit',
+              OrderedDict([('early_stopping_rounds', [[20]]),
+                           ('eval_metric', [['rmse']]),
+                           ('init_score', None),
+                           ('eval_init_score', None),
+                           ('verbose', [[True]]),
+                           ('feature_name', [['auto']]),
+                           ('categorical_feature', [['auto']]),
+                           ('callbacks', None)])),
+             ('predict', OrderedDict([('clip_predict', [[(0, 20)]])]))])
+
+Python: version 3.6.9
+lightgbm: version 2.2.3
+matplotlib: version 3.2.2
+numpy: version 1.18.5
+pandas: version 1.1.4
+scikit-learn: version 0.22.2.post1
+
+os: linux
+os_full: Linux-4.19.112+-x86_64-with-Ubuntu-18.04-bionic
+runtime: Colab using CPU
+gb_physical_dram: 0
+n_logical_cpu: 4
+n_physical_cpu: 2
+n_multiprocessing_cpu: 4
+chipset: x86_64
+
+|                                                         |  pid   |              vm               |             |
+|     Time and Date     |        Measurement Point        | pid-GB | used-GB | avail-GB | total-GB | Active Proc |
+------------------------------------------------------------------------------------------------------------------
+| Sat 11:16:12 11/21/20 | Program Start                   |  14.13 |   15.72 |    11.68 |    27.39 |     []      |
+| Sat 11:16:12 11/21/20 | Before defining features        |  14.13 |   15.72 |    11.68 |    27.39 |     []      |
+| Sat 11:16:12 11/21/20 | Iteration Parameters Defined    |  14.13 |   15.72 |    11.68 |    27.39 |     []      |
+| Sat 11:16:12 11/21/20 | Start EDA Module                |  14.13 |   15.72 |    11.68 |    27.39 |     []      |
+| Sat 11:16:18 11/21/20 | Joined load_dfs mp              |  13.51 |   15.05 |    12.34 |    27.39 |     []      |
+| Sat 11:16:19 11/21/20 | Merged stt with shops and items |  13.51 |   15.05 |    12.34 |    27.39 |     []      |
+| Sat 11:16:21 11/21/20 | Completed stt transformations   |  13.51 |   15.05 |    12.34 |    27.39 |     []      |
+| Sat 11:16:21 11/21/20 | EDA .ftr Saved                  |  13.48 |   15.02 |    12.38 |    27.39 |     []      |
+| Sat 11:16:21 11/21/20 | End EDA Module                  |  13.48 |   15.02 |    12.38 |    27.39 |     []      |
+| Sat 11:16:21 11/21/20 | Start Data Module               |  13.48 |   15.02 |    12.38 |    27.39 |     []      |
+| Sat 11:16:21 11/21/20 | EDA .ftr Loaded                 |  13.48 |   15.02 |    12.38 |    27.39 |     []      |
+| Sat 11:16:38 11/21/20 | Joined Agg mp                   |  12.14 |   13.58 |    13.82 |    27.39 |     []      |
+| Sat 11:16:46 11/21/20 | Joined CP mp                    |  12.11 |   13.55 |    13.85 |    27.39 |     []      |
+| Sat 11:17:01 11/21/20 | Cartesian Product Rows Added    |  13.44 |   14.97 |    12.42 |    27.39 |     []      |
+| Sat 11:18:05 11/21/20 | Joined Lag mp                   |  13.16 |   14.71 |    12.68 |    27.39 |     []      |
+| Sat 11:18:58 11/21/20 | Time Lag Features Added         |  15.64 |   17.37 |    10.03 |    27.39 |     []      |
+| Sat 11:19:20 11/21/20 | Data .ftr Saved                 |  15.67 |   17.40 |     9.99 |    27.39 |     []      |
+| Sat 11:19:20 11/21/20 | End Data Module                 |  15.67 |   17.40 |     9.99 |    27.39 |     []      |
+| Sat 11:19:20 11/21/20 | Start TVT Module                |  15.67 |   17.40 |     9.99 |    27.39 |     []      |
+| Sat 11:19:22 11/21/20 | monthly_stt .ftr Loaded         |  15.67 |   17.41 |     9.98 |    27.39 |     []      |
+| Sat 11:19:49 11/21/20 | TVT about to split              |  15.69 |   17.43 |     9.97 |    27.39 |     []      |
+| Sat 11:19:54 11/21/20 | End TVT Module                  |  15.70 |   17.43 |     9.96 |    27.39 |     []      |
+| Sat 11:19:54 11/21/20 | Start ML Module                 |  15.70 |   17.43 |     9.96 |    27.39 |     []      |
+| Sat 11:20:46 11/21/20 | End ML Module                   |  15.72 |   17.46 |     9.93 |    27.39 |     []      |
+| Sat 11:20:46 11/21/20 | Start Postprocessing Module     |  15.72 |   17.46 |     9.93 |    27.39 |     []      |
+| Sat 11:20:46 11/21/20 | Start ML Module                 |  15.72 |   17.46 |     9.93 |    27.39 |     []      |
+| Sat 11:21:38 11/21/20 | End ML Module                   |  15.72 |   17.45 |     9.94 |    27.39 |     []      |
+| Sat 11:21:38 11/21/20 | Start Postprocessing Module     |  15.72 |   17.46 |     9.94 |    27.39 |     []      |
